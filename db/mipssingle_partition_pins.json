@@ -1,0 +1,461 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DADO_R_REG1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG1[31]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_R_REG2[31]",
+					"strict" : false
+				},
+				{
+					"name" : "END1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "END1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "END1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "END1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "END1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "END2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "END2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "END2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "END2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "END2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "END3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "END3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HAB_ESCRITA_REG",
+					"strict" : false
+				},
+				{
+					"name" : "END3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "END3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "END3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DADO_W_REG3[31]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

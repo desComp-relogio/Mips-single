@@ -18,13 +18,13 @@
 #
 # Quartus Prime
 # Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-# Date created = 15:09:55  October 22, 2018
+# Date created = 15:13:35  October 22, 2018
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "17.1"
-DATE = "15:09:55  October 22, 2018"
+DATE = "15:13:35  October 22, 2018"
 
 # Revisions
 
-PROJECT_REVISION = "ULA_MIPS_DLX"
+PROJECT_REVISION = "mipssingle"

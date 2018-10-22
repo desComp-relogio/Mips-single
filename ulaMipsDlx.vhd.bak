@@ -33,7 +33,7 @@ architecture ulaMipsDlxArch of ulaMipsDlx is
 --    MUX4 : entity work.mux_4 PORT MAP (A => auxULAinB and auxULAinA, B => auxULAinA or auxULAinB, C => ?, D => ?, X => auxResult);
     aux_a <= A;
     aux_b <= B;
-    Q <= aux_result;
+    Q <= auxResult;
     ZERO <= nor_reduce(aux_result);
 
 end architecture;
