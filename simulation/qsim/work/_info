@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/fredcurti-mac/descomp/aula14/simulation/qsim
+Eula_uc
+Z1 w1539712147
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
+R0
+Z9 8ULA_MIPS_DLX.vho
+Z10 FULA_MIPS_DLX.vho
+l0
+L36
+VKDISSE:Q2AR=7bMacCO<Q1
+!s100 39[Y6aBE?ajH0B@`mdIP12
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1539712148
+!i10b 1
+Z13 !s108 1539712148.000000
+Z14 !s90 -work|work|ULA_MIPS_DLX.vho|
+Z15 !s107 ULA_MIPS_DLX.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 6 ula_uc 0 22 KDISSE:Q2AR=7bMacCO<Q1
+l79
+L44
+V57W>;L2gOY?P2LbDK9W[00
+!s100 <Xa4a1`CJ_]ZUa0@JDjRC3
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Eula_uc_vhd_vec_tst
+Z18 w1539712142
+R6
+R7
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L31
+VSYU:<@nLoLKdGT0U:`7Nd1
+!s100 SniVSkcMlNh9_VLAV7AEW1
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Aula_uc_arch
+R6
+R7
+Z23 DEx4 work 18 ula_uc_vhd_vec_tst 0 22 SYU:<@nLoLKdGT0U:`7Nd1
+l46
+L33
+VVRgPI_Ji_]Ab<TWD?Nf;30
+!s100 WHz_HWP9aU^b]KWaSMAdj2
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17
