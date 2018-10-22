@@ -8,32 +8,25 @@ use ieee.std_logic_1164.all;
 -- SIGNED and UNSIGNED types, and relevant functions
 use ieee.numeric_std.all;
 
-entity mux_2 is
-	port
-	(
+entity mux2 is
+	port (
 		-- Input ports
 		A		: in  std_logic_vector(31 downto 0);
 		B		: in  std_logic_vector(31 downto 0);
-		sel	: in  std_logic;
-
+		SEL	: in  std_logic;
 		-- Output ports
-		q		: out std_logic_vector(31 downto 0)
+		Q		: out std_logic_vector(31 downto 0)
 	);
 	
 end entity;
--- Library Clause(s) (optional)
--- Use Clause(s) (optional)
-
-architecture rtl of mux_2 is
-
+architecture mux2Arch of mux2 is
 	-- Declarations (optional)
-
 begin
-	process(sel, A, B)
+	process(SEL, A, B)
 	begin
-		 case sel is
-			  when '0' => q <= A;
-			  when '1' => q <= B;
+		 case SEL is
+			  when '0' => Q <= A;
+			  when '1' => Q <= B;
 		 end case;
 	end process;
 end architecture;
