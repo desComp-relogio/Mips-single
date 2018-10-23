@@ -1,46 +1,30 @@
-# do ULA_MIPS_DLX.do
+# do mipssingle.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:49:08 on Oct 16,2018
-# vcom -work work ULA_MIPS_DLX.vho 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cyclonev_atom_pack
-# -- Loading package cyclonev_components
-# -- Compiling entity ULA_UC
-# -- Compiling architecture structure of ULA_UC
-# End time: 14:49:08 on Oct 16,2018, Elapsed time: 0:00:00
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:09:53 on Oct 23,2018
+# vlog -work work mipssingle.vo 
+# -- Compiling module bancoRegistradores
+# 
+# Top level modules:
+# 	bancoRegistradores
+# End time: 18:09:54 on Oct 23,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:49:08 on Oct 16,2018
-# vcom -work work Waveform.vwf.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ULA_UC_vhd_vec_tst
-# -- Compiling architecture ULA_UC_arch of ULA_UC_vhd_vec_tst
-# End time: 14:49:08 on Oct 16,2018, Elapsed time: 0:00:00
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 18:09:54 on Oct 23,2018
+# vlog -work work Waveform1.vwf.vt 
+# -- Compiling module bancoRegistradores_vlg_vec_tst
+# 
+# Top level modules:
+# 	bancoRegistradores_vlg_vec_tst
+# End time: 18:09:54 on Oct 23,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ULA_UC_vhd_vec_tst 
-# Start time: 14:49:08 on Oct 16,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.ula_uc_vhd_vec_tst(ula_uc_arch)
-# Loading altera_lnsim.altera_lnsim_components
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cyclonev.cyclonev_atom_pack(body)
-# Loading cyclonev.cyclonev_components
-# Loading work.ula_uc(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading cyclonev.cyclonev_io_obuf(arch)
-# Loading cyclonev.cyclonev_io_ibuf(arch)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# after#32
-# End time: 14:49:09 on Oct 16,2018, Elapsed time: 0:00:01
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.bancoRegistradores_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 18:09:54 on Oct 23,2018
+# Loading work.bancoRegistradores_vlg_vec_tst
+# Loading work.bancoRegistradores
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Note: $finish    : Waveform1.vwf.vt(57)
+#    Time: 1 us  Iteration: 0  Instance: /bancoRegistradores_vlg_vec_tst
+# End time: 18:09:54 on Oct 23,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

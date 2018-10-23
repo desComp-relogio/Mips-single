@@ -24,7 +24,7 @@ architecture bancoRegistradoresArch of bancoRegistradores is
           out_reg17, out_reg18, out_reg19, out_reg20, out_reg21, out_reg22, out_reg23, out_reg24, out_reg25, out_reg26, out_reg27, out_reg28, out_reg29, out_reg30, out_reg31 : std_logic_vector(31 downto 0);
 
   begin
-    REG0  : entity work.registradorGenerico port map(DIN => DADO_W_REG3, DOUT => out_reg0, ENABLE => enable_write(0), CLK => CLK, RST => reset_reg(0));
+    REG0  : entity work.registradorGenerico port map(DIN => (others => '0'), DOUT => out_reg0, ENABLE => '1', CLK => CLK, RST => reset_reg(0));
     REG1  : entity work.registradorGenerico port map(DIN => DADO_W_REG3, DOUT => out_reg1, ENABLE => enable_write(1), CLK => CLK, RST => reset_reg(1));
     REG2  : entity work.registradorGenerico port map(DIN => DADO_W_REG3, DOUT => out_reg2, ENABLE => enable_write(2), CLK => CLK, RST => reset_reg(2));
     REG3  : entity work.registradorGenerico port map(DIN => DADO_W_REG3, DOUT => out_reg3, ENABLE => enable_write(3), CLK => CLK, RST => reset_reg(3));

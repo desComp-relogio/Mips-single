@@ -308,7 +308,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "END3[1]",
+					"name" : "END3[0]",
 					"strict" : false
 				},
 				{
@@ -316,15 +316,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "HAB_ESCRITA_REG",
-					"strict" : false
-				},
-				{
-					"name" : "END3[0]",
+					"name" : "END3[1]",
 					"strict" : false
 				},
 				{
 					"name" : "END3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HAB_ESCRITA_REG",
 					"strict" : false
 				},
 				{
