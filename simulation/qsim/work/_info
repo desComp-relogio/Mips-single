@@ -9,132 +9,256 @@ z2
 cModel Technology
 Z0 dZ:/fredcurti-mac/descomp/aula14/simulation/qsim
 vbancoRegistradores
-Z1 !s110 1540328994
+Z1 !s110 1540591455
 !i10b 1
-!s100 zCDZXM?APAlN[RiZ>OgVP3
-I?=0z8LA@VFeI:cWdh=a^L1
+!s100 ?mZN18^DRXl@Ii]PkO:W>0
+I>HI:dfB[UK91I1WV^X=O01
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 d/home/raphacosta/mipssingle/simulation/qsim
-w1540328993
-8mipssingle.vo
-Fmipssingle.vo
-L0 32
-Z4 OV;L;10.4d;61
+w1540591454
+Z4 8mipssingle.vo
+Z5 Fmipssingle.vo
+Z6 L0 32
+Z7 OV;L;10.4d;61
 r1
 !s85 0
 31
-!s108 1540328993.000000
-!s107 mipssingle.vo|
-!s90 -work|work|mipssingle.vo|
+Z8 !s108 1540591455.000000
+Z9 !s107 mipssingle.vo|
+Z10 !s90 -work|work|mipssingle.vo|
 !i113 1
-Z5 o-work work
+Z11 o-work work
 nbanco@registradores
 vbancoRegistradores_vlg_vec_tst
 R1
 !i10b 1
-!s100 `=CHoeSeCV6mFK5_F]9Xe3
-I48f7<72E=QVI5_bW];]:S1
+!s100 HPoEj]dOch5VR[5nf7z;22
+IC@eeaKUVK`RGHTZ5DcKzC1
 R2
 R3
-w1540328991
-8Waveform1.vwf.vt
-FWaveform1.vwf.vt
-L0 30
-R4
+w1540591453
+8WaveformMemoriaDeInst.vwf.vt
+FWaveformMemoriaDeInst.vwf.vt
+Z12 L0 30
+R7
 r1
 !s85 0
 31
-!s108 1540328994.000000
-!s107 Waveform1.vwf.vt|
-!s90 -work|work|Waveform1.vwf.vt|
+R8
+!s107 WaveformMemoriaDeInst.vwf.vt|
+!s90 -work|work|WaveformMemoriaDeInst.vwf.vt|
 !i113 1
-R5
+R11
 nbanco@registradores_vlg_vec_tst
+vdecoder
+Z13 !s110 1540846625
+!i10b 1
+!s100 0623nHBICQ5elS3bREX2=0
+IIVDWDJhEeRmHUCaN]L@G03
+R2
+R3
+w1540846624
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z14 !s108 1540846625.000000
+R9
+R10
+!i113 1
+R11
+vdecoder_vlg_vec_tst
+R13
+!i10b 1
+!s100 d8c66G]kL[FkgZ0Ka;je]3
+I]zM;R_`f>MXOj:Y8g>fZ?1
+R2
+R3
+w1540846623
+8WaveformDecoder.vwf.vt
+FWaveformDecoder.vwf.vt
+R12
+R7
+r1
+!s85 0
+31
+R14
+!s107 WaveformDecoder.vwf.vt|
+!s90 -work|work|WaveformDecoder.vwf.vt|
+!i113 1
+R11
+vmemoriaDeDados
+Z15 !s110 1540842856
+!i10b 1
+!s100 LjedhF8DP@Qe8;PZEJ9Fm0
+IXV[I<O6RhF8nG1Qa<ocoI2
+R2
+R3
+w1540842855
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z16 !s108 1540842856.000000
+R9
+R10
+!i113 1
+R11
+nmemoria@de@dados
+vmemoriaDeDados_vlg_vec_tst
+R15
+!i10b 1
+!s100 dP8QSef0nKCRZ3ek`oGOM2
+Iz[g[nbfETP0BFUeJzKS382
+R2
+R3
+w1540842854
+Z17 8WaveformMemoriaDeDados.vwf.vt
+Z18 FWaveformMemoriaDeDados.vwf.vt
+R12
+R7
+r1
+!s85 0
+31
+R16
+Z19 !s107 WaveformMemoriaDeDados.vwf.vt|
+Z20 !s90 -work|work|WaveformMemoriaDeDados.vwf.vt|
+!i113 1
+R11
+nmemoria@de@dados_vlg_vec_tst
+vmemoriaDeInst
+Z21 !s110 1540842718
+!i10b 1
+!s100 nmNL2f;IRjnhe0TCD0:e?0
+I[_WWlhi0i_0MmOZ=?^c1F2
+R2
+R3
+w1540842717
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z22 !s108 1540842718.000000
+R9
+R10
+!i113 1
+R11
+nmemoria@de@inst
+vmemoriaDeInst_vlg_vec_tst
+R21
+!i10b 1
+!s100 2^PVMEn9;fA4g:HN^W@BA1
+I^P8L8U>jGoT5e`4Xn4RM@2
+R2
+R3
+w1540842716
+R17
+R18
+R12
+R7
+r1
+!s85 0
+31
+R22
+R19
+R20
+!i113 1
+R11
+nmemoria@de@inst_vlg_vec_tst
 Eula_uc
-Z6 w1539712147
-Z7 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z8 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
-Z9 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z10 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
-Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z12 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z13 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
+Z23 w1539712147
+Z24 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z25 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
+Z26 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z27 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
+Z28 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z29 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z30 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
 R0
-Z14 8ULA_MIPS_DLX.vho
-Z15 FULA_MIPS_DLX.vho
+Z31 8ULA_MIPS_DLX.vho
+Z32 FULA_MIPS_DLX.vho
 l0
 L36
 VKDISSE:Q2AR=7bMacCO<Q1
 !s100 39[Y6aBE?ajH0B@`mdIP12
-Z16 OV;C;10.5b;63
+Z33 OV;C;10.5b;63
 32
-Z17 !s110 1539712148
+Z34 !s110 1539712148
 !i10b 1
-Z18 !s108 1539712148.000000
-Z19 !s90 -work|work|ULA_MIPS_DLX.vho|
-Z20 !s107 ULA_MIPS_DLX.vho|
+Z35 !s108 1539712148.000000
+Z36 !s90 -work|work|ULA_MIPS_DLX.vho|
+Z37 !s107 ULA_MIPS_DLX.vho|
 !i113 1
-R5
-Z21 tExplicit 1 CvgOpt 0
-Astructure
-R7
-R8
-R9
-R10
 R11
-R12
-R13
+Z38 tExplicit 1 CvgOpt 0
+Astructure
+R24
+R25
+R26
+R27
+R28
+R29
+R30
 DEx4 work 6 ula_uc 0 22 KDISSE:Q2AR=7bMacCO<Q1
 l79
 L44
 V57W>;L2gOY?P2LbDK9W[00
 !s100 <Xa4a1`CJ_]ZUa0@JDjRC3
-R16
+R33
 32
-R17
+R34
 !i10b 1
-R18
-R19
-R20
+R35
+R36
+R37
 !i113 1
-R5
-R21
-Eula_uc_vhd_vec_tst
-Z22 w1539712142
 R11
-R12
+R38
+Eula_uc_vhd_vec_tst
+Z39 w1539712142
+R28
+R29
 R0
-Z23 8Waveform.vwf.vht
-Z24 FWaveform.vwf.vht
+Z40 8Waveform.vwf.vht
+Z41 FWaveform.vwf.vht
 l0
 L31
 VSYU:<@nLoLKdGT0U:`7Nd1
 !s100 SniVSkcMlNh9_VLAV7AEW1
-R16
+R33
 32
-R17
+R34
 !i10b 1
-R18
-Z25 !s90 -work|work|Waveform.vwf.vht|
-Z26 !s107 Waveform.vwf.vht|
+R35
+Z42 !s90 -work|work|Waveform.vwf.vht|
+Z43 !s107 Waveform.vwf.vht|
 !i113 1
-R5
-R21
-Aula_uc_arch
 R11
-R12
+R38
+Aula_uc_arch
+R28
+R29
 DEx4 work 18 ula_uc_vhd_vec_tst 0 22 SYU:<@nLoLKdGT0U:`7Nd1
 l46
 L33
 VVRgPI_Ji_]Ab<TWD?Nf;30
 !s100 WHz_HWP9aU^b]KWaSMAdj2
-R16
+R33
 32
-R17
+R34
 !i10b 1
-R18
-R25
-R26
+R35
+R42
+R43
 !i113 1
-R5
-R21
+R11
+R38

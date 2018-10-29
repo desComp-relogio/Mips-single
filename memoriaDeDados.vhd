@@ -1,29 +1,35 @@
-entity memoriaDeInst is
-    generic (
-        DATA_WIDTH : natural := 8;
-        ADDR_WIDTH : natural := 9
-    );
+library IEEE;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
 
+entity memoriaDeDados is
     port (
-        CLK: in std_logic;
-        ADDR: in natural range 0 to 2**ADDR_WIDTH-1;
-        Q: out std_logic_vector (DATA_WIDTH-1 downto 0)
-    );
+        CLK     : in STD_LOGIC;
+        LER     : in std_logic;
+        ESCREVER: in std_logic;
+        ENDERECO: in std_logic_vector(15 downto 0);
+        DADO_W  : in std_logic_vector(31 downto 0);
+		  
+        DADO_R: out std_logic_vector(31 downto 0)
+	);
 end entity;
 
-architecture memoriaDeInstArch of memoriaDeInst is
+architecture memoriaDeDadosArch of memoriaDeDados is
 
-type memory_t is array (2**ADDR_WIDTH-1 downto 0) of std_logic_vector (DATA_WIDTH-1 downto 0);
+type memory_t is array (65535 downto 0) of std_logic_vector (31 downto 0);
 signal content: memory_t;
 attribute ram_init_file : string;
-attribute ram_init_file of content:
-signal is "initROM.mif";
+attribute ram_init_file of content: signal is "initDATAMEM.mif";
 
 begin
     process(CLK)
     begin
         if (RISING_EDGE(CLK)) then
-            Q <= content(ADDR);
+            if (LER) then
+                DADO_R <= content(to_integer(unsigned(ENDERECO))); 
+            elsif(ESCREVER) then
+                content(to_integer(unsigned(ENDERECO))) <= DADO_W;
+            end if;
         end if;
     end process;
 end architecture;

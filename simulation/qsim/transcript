@@ -1,30 +1,31 @@
 # do mipssingle.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:09:53 on Oct 23,2018
+# Start time: 17:57:05 on Oct 29,2018
 # vlog -work work mipssingle.vo 
-# -- Compiling module bancoRegistradores
+# -- Compiling module decoder
 # 
 # Top level modules:
-# 	bancoRegistradores
-# End time: 18:09:54 on Oct 23,2018, Elapsed time: 0:00:01
+# 	decoder
+# End time: 17:57:05 on Oct 29,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 18:09:54 on Oct 23,2018
-# vlog -work work Waveform1.vwf.vt 
-# -- Compiling module bancoRegistradores_vlg_vec_tst
+# Start time: 17:57:05 on Oct 29,2018
+# vlog -work work WaveformDecoder.vwf.vt 
+# -- Compiling module decoder_vlg_vec_tst
 # 
 # Top level modules:
-# 	bancoRegistradores_vlg_vec_tst
-# End time: 18:09:54 on Oct 23,2018, Elapsed time: 0:00:00
+# 	decoder_vlg_vec_tst
+# End time: 17:57:05 on Oct 29,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.bancoRegistradores_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 18:09:54 on Oct 23,2018
-# Loading work.bancoRegistradores_vlg_vec_tst
-# Loading work.bancoRegistradores
-# Loading altera_ver.dffeas
-# Loading altera_ver.PRIM_GDFF_LOW
-# ** Note: $finish    : Waveform1.vwf.vt(57)
-#    Time: 1 us  Iteration: 0  Instance: /bancoRegistradores_vlg_vec_tst
-# End time: 18:09:54 on Oct 23,2018, Elapsed time: 0:00:00
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.decoder_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 17:57:05 on Oct 29,2018
+# Loading work.decoder_vlg_vec_tst
+# Loading work.decoder
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# ** Note: $finish    : WaveformDecoder.vwf.vt(45)
+#    Time: 1 us  Iteration: 0  Instance: /decoder_vlg_vec_tst
+# End time: 17:57:05 on Oct 29,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
