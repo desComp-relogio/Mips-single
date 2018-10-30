@@ -19,5 +19,5 @@ architecture memoriaAllArch of memoriaAll is
 begin
     decoder: entity work.decoder port map(ENDERECO => END_MEM, habMEM => HM);
     memoria64k: entity work.memoriaDeDados port map(CLK => CLK, LER => RD, ESCREVER => WR,
-        ENDERECO => END_MEM(15 downto 0), DADO_W => DATA_MEM_W, DADO_R => DATA_MEM_R);
+        ENDERECO => END_MEM(15 downto 2), DADO_W => DATA_MEM_W, DADO_R => DATA_MEM_R);
 end architecture;

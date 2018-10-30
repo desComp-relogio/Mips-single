@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/29/2018 16:54:14"
+// Generated on "10/30/2018 14:20:21"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          memoriaDeDados
 // 
@@ -37,7 +37,6 @@ reg ESCREVER;
 reg LER;
 // wires                                               
 wire [31:0] DADO_R;
-wire [31:0] teste;
 
 // assign statements (if any)                          
 memoriaDeDados i1 (
@@ -47,8 +46,7 @@ memoriaDeDados i1 (
 	.DADO_W(DADO_W),
 	.ENDERECO(ENDERECO),
 	.ESCREVER(ESCREVER),
-	.LER(LER),
-	.teste(teste)
+	.LER(LER)
 );
 initial 
 begin 

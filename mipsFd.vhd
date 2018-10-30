@@ -7,7 +7,7 @@ entity mipsFd is
 	port (
         -- PORTAS ENTRADA
         CLK             : in STD_LOGIC;
-
+		  EN_BUT				: in STD_LOGIC;
         MUX_PC_BEQ_JMP  : in STD_LOGIC;
         MUX_RT_RD       : in STD_LOGIC;
         HAB_ESCRITA_REG : in STD_LOGIC;
@@ -25,16 +25,16 @@ entity mipsFd is
         DATA_MEM_W      : out STD_LOGIC_VECTOR(31 DOWNTO 0);
 
         -- PORTAS SAIDA
-        INST_OPCODE     : out STD_LOGIC_VECTOR(5 DOWNTO 0);
-        Q	            : out STD_LOGIC_VECTOR(BYTE_WIDTH-1 DOWNTO 0)
+        INST_OPCODE     : out STD_LOGIC_VECTOR(5 DOWNTO 0)
     );
 
 end entity;
 
 architecture mipsFdArch of mipsFd is
-    constant ONE: STD_LOGIC_VECTOR(31 downto 0) := std_logic_vector(to_unsigned(1, 32));
+    constant FOUR: STD_LOGIC_VECTOR(31 downto 0) := std_logic_vector(to_unsigned(4, 32));
 
-    signal PC                   : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
+    signal aux_pc_in            : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
+    signal aux_pc_out           : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
     signal aux_mux_beq_out      : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_mem_inst_out     : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_som_pc_out       : STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -46,16 +46,14 @@ architecture mipsFdArch of mipsFd is
     signal aux_ula_out          : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_shifter32_out    : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_shifter26_out    : STD_LOGIC_VECTOR(31 DOWNTO 0);
-
     signal aux_som_beq_out      : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_ula_mem_out      : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_ula_z            : STD_LOGIC;
-
     signal aux_mux_rt_rd_out    : STD_LOGIC_VECTOR(4 DOWNTO 0);
 
-
 begin
-    memoriaDeInst   : entity work.memoriaDeInst port map(ADDR => PC, CLK => CLK, Q => aux_mem_inst_out);
+	 PC				  : entity work.registradorGenerico port map(DIN => aux_pc_in, DOUT => aux_pc_out, ENABLE => EN_BUT, CLK => CLK, RST => '0');
+    memoriaDeInst   : entity work.memoriaDeInst port map(ADDR => to_integer(unsigned(aux_pc_out(31 DOWNTO 2))), CLK => CLK, Q => aux_mem_inst_out);
     bancoReg        : entity work.bancoRegistradores port map(
         HAB_ESCRITA_REG => HAB_ESCRITA_REG, CLK => CLK,
         END1 => aux_mem_inst_out(25 DOWNTO 21), END2 => aux_mem_inst_out(20 DOWNTO 16), END3 => aux_mux_rt_rd_out,
@@ -63,10 +61,13 @@ begin
         DADO_R_REG1 => aux_banco_reg1_out, DADO_R_REG2 => aux_banco_reg2_out
     );
 
+    ula             : entity work.ulaMips port map(
+        A => aux_banco_reg1_out, B => aux_mux_rt_imm_out, SEL => aux_op(1 DOWNTO 0), INVERTE_A => aux_op(3), INVERTE_B => aux_op(2), CIN => aux_op(2),
+        R => aux_ula_out, ZERO => aux_ula_z
+    );
     ucUla           : entity work.ulaUc port map(FUNCT => aux_mem_inst_out(5 DOWNTO 0), UC_OUT => ULA_OP, Q => aux_op);
-    ula             : entity work.ulaMipsDlx port map(A => aux_banco_reg1_out, B => aux_mux_rt_imm_out, SEL => aux_op(1 DOWNTO 0), INVERTE_A => aux_op(3), INVERTE_B => aux_op(2), C_OUT => , C_IN => aux_op(2), Q => aux_ula_out, ZERO => aux_ula_z);
 
-    somadorPc       : entity work.somador port map(A => ONE, B => PC, Q => aux_som_pc_out);
+    somadorPc       : entity work.somador port map(A => FOUR, B => aux_pc_out, Q => aux_som_pc_out);
     somadorBeq      : entity work.somador port map(A => aux_shifter32_out, B => aux_som_pc_out, Q => aux_som_beq_out);
 
     extensorSinal   : entity work.extensorSinal port map(A => aux_mem_inst_out(15 DOWNTO 0), Q => aux_extensor_out); -- entra 16 sai 32
@@ -74,8 +75,8 @@ begin
     shifter2_26     : entity work.shifterLeft2 port map(A => "000000" & aux_mem_inst_out(25 DOWNTO 0), Q => aux_shifter26_out);
     shifter2_32     : entity work.shifterLeft2 port map(A => aux_extensor_out, Q => aux_shifter32_out);
     
-    muxPc           : entity work.mux2 port map(A => aux_mux_beq_out, B => aux_som_pc_out(31 DOWNTO 28) & aux_shifter26_out(27 DOWNTO 0), SEL => MUX_PC_BEQ_JMP, Q => PC);
-    muxRtRd         : entity work.mux2 port map(A => aux_mem_inst_out(20 DOWNTO 16), B => aux_mem_inst_out(15 DOWNTO 11), SEL => MUX_RT_RD, Q => aux_mux_rt_rd_out);
+    muxPc           : entity work.mux2 port map(A => aux_mux_beq_out, B => aux_som_pc_out(31 DOWNTO 28) & aux_shifter26_out(27 DOWNTO 0), SEL => MUX_PC_BEQ_JMP, Q => aux_pc_in);
+    muxRtRd         : entity work.mux2 generic map (data_len => 5) port map(A => aux_mem_inst_out(20 DOWNTO 16), B => aux_mem_inst_out(15 DOWNTO 11), SEL => MUX_RT_RD, Q => aux_mux_rt_rd_out);
     muxRtImm        : entity work.mux2 port map(A => aux_banco_reg2_out, B => aux_extensor_out, SEL => MUX_RT_IMM, Q => aux_mux_rt_imm_out);
     muxUlaMem       : entity work.mux2 port map(A => aux_ula_out, B => DATA_MEM_R, SEL => MUX_ULA_MEM, Q => aux_ula_mem_out);
     muxBeq          : entity work.mux2 port map(A => aux_som_pc_out, B => aux_som_beq_out, SEL => BEQ and aux_ula_z, Q => aux_mux_beq_out);

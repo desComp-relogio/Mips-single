@@ -90,14 +90,14 @@ R14
 !s90 -work|work|WaveformDecoder.vwf.vt|
 !i113 1
 R11
-vmemoriaDeDados
-Z15 !s110 1540842856
+vmemoriaAll
+Z15 !s110 1540851412
 !i10b 1
-!s100 LjedhF8DP@Qe8;PZEJ9Fm0
-IXV[I<O6RhF8nG1Qa<ocoI2
+!s100 LzXA>I@OZA1b<];=oECe01
+I>>bgk6z;F;?=M@gdN742]0
 R2
 R3
-w1540842855
+w1540851410
 R4
 R5
 R6
@@ -105,29 +105,71 @@ R7
 r1
 !s85 0
 31
-Z16 !s108 1540842856.000000
+Z16 !s108 1540851412.000000
 R9
 R10
 !i113 1
 R11
-nmemoria@de@dados
-vmemoriaDeDados_vlg_vec_tst
+nmemoria@all
+vmemoriaAll_vlg_vec_tst
 R15
 !i10b 1
-!s100 dP8QSef0nKCRZ3ek`oGOM2
-Iz[g[nbfETP0BFUeJzKS382
+!s100 H[djg1CL[=^NP=hW>KTLC3
+Igd23l3?E5kP3C4P@67iSE3
 R2
 R3
-w1540842854
-Z17 8WaveformMemoriaDeDados.vwf.vt
-Z18 FWaveformMemoriaDeDados.vwf.vt
+w1540851408
+8WaveformMemoriaAll.vwf.vt
+FWaveformMemoriaAll.vwf.vt
 R12
 R7
 r1
 !s85 0
 31
 R16
-Z19 !s107 WaveformMemoriaDeDados.vwf.vt|
+!s107 WaveformMemoriaAll.vwf.vt|
+!s90 -work|work|WaveformMemoriaAll.vwf.vt|
+!i113 1
+R11
+nmemoria@all_vlg_vec_tst
+vmemoriaDeDados
+Z17 !s110 1540920026
+!i10b 1
+!s100 _>?SP3kz>d^kcNdmNdo<Y3
+IzGFMcU=i1AdJOKzKg0h>]1
+R2
+R3
+w1540920023
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+!s108 1540920024.000000
+R9
+R10
+!i113 1
+R11
+nmemoria@de@dados
+vmemoriaDeDados_vlg_vec_tst
+R17
+!i10b 1
+!s100 k:lmk^]eGjIY:2X493i[g0
+IRj?ke<2=@mcd:COj@N2>c3
+R2
+R3
+w1540920021
+Z18 8WaveformMemoriaDeDados.vwf.vt
+Z19 FWaveformMemoriaDeDados.vwf.vt
+R12
+R7
+r1
+!s85 0
+31
+!s108 1540920026.000000
+!s107 WaveformMemoriaDeDados.vwf.vt|
 Z20 !s90 -work|work|WaveformMemoriaDeDados.vwf.vt|
 !i113 1
 R11
@@ -161,15 +203,15 @@ I^P8L8U>jGoT5e`4Xn4RM@2
 R2
 R3
 w1540842716
-R17
 R18
+R19
 R12
 R7
 r1
 !s85 0
 31
 R22
-R19
+!s107 WaveformMemoriaDeDados.vwf.vt|
 R20
 !i113 1
 R11

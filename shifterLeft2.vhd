@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 
 entity shifterLeft2 is
     generic (
-        BYTE_WIDTH : integer := 32;
+        BYTE_WIDTH : integer := 32
     );
 
 	port (

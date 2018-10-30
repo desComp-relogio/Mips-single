@@ -21,14 +21,14 @@ end entity;
 
 architecture ulaMipsDlxArch of ulaMipsDlx is
 	-- Declarations (optional)
-  signal aux_a : STD_LOGIC_VECTOR(31 DOWNTO 0);
-  signal aux_b : STD_LOGIC_VECTOR(31 DOWNTO 0);
+  signal aux_a        : STD_LOGIC_VECTOR(31 DOWNTO 0);
+  signal aux_b        : STD_LOGIC_VECTOR(31 DOWNTO 0);
   signal aux_ula_in_a : STD_LOGIC_VECTOR(31 DOWNTO 0);
   signal aux_ula_in_b : STD_LOGIC_VECTOR(31 DOWNTO 0);
-  signal aux_result : STD_LOGIC_VECTOR(31 DOWNTO 0);
+  signal aux_result   : STD_LOGIC_VECTOR(31 DOWNTO 0);
   
   begin
-    ULINHA:entity work.ulinha PORT MAP ()
+--    ULINHA:entity work.ulinha PORT MAP ()
     MUX2A: entity work.mux2 PORT MAP (A => aux_a, B => not aux_a, sel => INVERTE_A, q => aux_ula_in_a);
     MUX2B: entity work.mux2 PORT MAP (A => aux_b, B => not aux_b, sel => INVERTE_B, q => aux_ula_in_b);
     MUX4 : entity work.mux4 PORT MAP (A => aux_ula_in_b and aux_ula_in_a, B => aux_ula_in_a or aux_ula_in_b, C => ?, D => ?, X => auxResult);
