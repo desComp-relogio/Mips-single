@@ -20,6 +20,7 @@ end entity;
 architecture mipssingleArch of mipssingle is
     signal aux_inst_opcode      : STD_LOGIC_VECTOR(5 downto 0);
     signal aux_ula_op           : STD_LOGIC_VECTOR(1 DOWNTO 0);
+	 signal CLOCK					  : STD_LOGIC;
 
     signal aux_mux_pc_beq_jmp   : STD_LOGIC;
     signal aux_mux_rt_rd        : STD_LOGIC;
@@ -38,6 +39,7 @@ architecture mipssingleArch of mipssingle is
     signal aux_habMEM           : STD_LOGIC;
     -- eae meu bacano é quarta feira ja?
 begin 
+	CLOCK <= not KEY(0);
     
     mipsUc      : entity work.mipsUc port map(
         INST_OPCODE => aux_inst_opcode,
@@ -50,8 +52,8 @@ begin
         
 
     mipsFd      : entity work.mipsFd port map(
-        CLK => CLOCK_50,
-		  EN_BUT => KEY(0), 
+        CLK => CLOCK,
+		  EN_BUT => not KEY(1), 
         MUX_PC_BEQ_JMP => aux_mux_pc_beq_jmp, MUX_RT_RD => aux_mux_rt_rd,
         MUX_RT_IMM => aux_mux_rt_imm, MUX_ULA_MEM => aux_mux_ula_mem,
         HAB_ESCRITA_REG => aux_hab_escrita_reg,
@@ -68,7 +70,7 @@ begin
     );
 
     memoria: entity work.memoriaAll port map(
-        CLK      => CLOCK_50,
+        CLK      => CLOCK,
         RD      => aux_hab_leitura_mem,
         WR => aux_hab_escrita_mem,
         END_MEM => aux_end_mem,
@@ -99,7 +101,7 @@ begin
     
     -- display7 : entity work.conversorHex7seg
     -- Port map (saida7seg => HEX7, dadoHex => SW(17) &  '0' & SW(17) & '0', apaga => not SW(17));
-
+	 
     -- Chave: tristate
     -- LED: FLIP FLOP
 end architecture;
