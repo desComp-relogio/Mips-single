@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Oct 30 18:45:33 2018
-Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Tue Oct 30 19:37:23 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : mipssingle
-Top-level Entity Name : tristate
+Top-level Entity Name : mipsFd
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 65
+Total logic elements : 2,676
+    Total combinational functions : 1,748
+    Dedicated logic registers : 969
+Total registers : 969
+Total pins : 178
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 16,384
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

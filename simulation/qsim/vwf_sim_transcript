@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA_MIPS_DLX -c ULA_MIPS_DLX --vector_source="Z:/fredcurti-mac/descomp/aula14/Waveform.vwf" --testbench_file="Z:/fredcurti-mac/descomp/aula14/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mipssingle -c mipssingle --vector_source="Z:/fredcurti-mac/mipssingle/Waveform2.vwf" --testbench_file="Z:/fredcurti-mac/mipssingle/simulation/qsim/Waveform2.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,16 +25,24 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 16 14:49:00 2018
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ULA_MIPS_DLX -c ULA_MIPS_DLX --vector_source=Z:/fredcurti-mac/descomp/aula14/Waveform.vwf --testbench_file=Z:/fredcurti-mac/descomp/aula14/simulation/qsim/Waveform.vwf.vht
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "ULA_MIPS_DLX"
+    Info: Processing started: Tue Oct 30 19:38:06 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mipssingle -c mipssingle --vector_source=Z:/fredcurti-mac/mipssingle/Waveform2.vwf --testbench_file=Z:/fredcurti-mac/mipssingle/simulation/qsim/Waveform2.vwf.vht
+Info (119006): Selected device EP4CE115F29C7 for design "mipssingle"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+st bench files
+
+etlist Writer was successful. 0 errors, 140 warnings
+    Info: Peak virtual memory: 4660 megabytes
+    Info: Processing ended: Tue Oct 30 19:38:09 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="Z:/fredcurti-mac/descomp/aula14/simulation/qsim/" ULA_MIPS_DLX -c ULA_MIPS_DLX
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="Z:/fredcurti-mac/mipssingle/simulation/qsim/" mipssingle -c mipssingle
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -52,101 +60,112 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Oct 16 14:49:04 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=Z:/fredcurti-mac/descomp/aula14/simulation/qsim/ ULA_MIPS_DLX -c ULA_MIPS_DLX
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "ULA_MIPS_DLX"
+    Info: Processing started: Tue Oct 30 19:38:10 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=Z:/fredcurti-mac/mipssingle/simulation/qsim/ mipssingle -c mipssingle
+Info (119006): Selected device EP4CE115F29C7 for design "mipssingle"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ULA_MIPS_DLX.vho in folder "Z:/fredcurti-mac/descomp/aula14/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file mipssingle.vho in folder "Z:/fredcurti-mac/mipssingle/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4733 megabytes
-    Info: Processing ended: Tue Oct 16 14:49:07 2018
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4670 megabytes
+    Info: Processing ended: Tue Oct 30 19:38:14 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-Z:/fredcurti-mac/descomp/aula14/simulation/qsim/ULA_MIPS_DLX.do generated.
+Z:/fredcurti-mac/mipssingle/simulation/qsim/mipssingle.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do ULA_MIPS_DLX.do
+C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do mipssingle.do
 
 Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
 
-# do ULA_MIPS_DLX.do
+# do mipssingle.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:49:08 on Oct 16,2018
-# vcom -work work ULA_MIPS_DLX.vho 
+# Start time: 19:38:15 on Oct 30,2018
+# vcom -work work mipssingle.vho 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
-# -- Loading package cyclonev_atom_pack
-# -- Loading package cyclonev_components
-# -- Compiling entity ULA_UC
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity mipsFd
 
-# -- Compiling architecture structure of ULA_UC
+# -- Compiling architecture structure of mipsFd
 
-# End time: 14:49:08 on Oct 16,2018, Elapsed time: 0:00:00
+# End time: 19:38:16 on Oct 30,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:49:08 on Oct 16,2018
-# vcom -work work Waveform.vwf.vht 
+# Start time: 19:38:16 on Oct 30,2018
+# vcom -work work Waveform2.vwf.vht 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ULA_UC_vhd_vec_tst
+# -- Compiling entity mipsFd_vhd_vec_tst
+# -- Compiling architecture mipsFd_arch of mipsFd_vhd_vec_tst
 
-# -- Compiling architecture ULA_UC_arch of ULA_UC_vhd_vec_tst
-
-# End time: 14:49:08 on Oct 16,2018, Elapsed time: 0:00:00
+# End time: 19:38:18 on Oct 30,2018, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ULA_UC_vhd_vec_tst 
-# Start time: 14:49:08 on Oct 16,2018
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mipsFd_vhd_vec_tst 
+# Start time: 19:38:18 on Oct 30,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.ula_uc_vhd_vec_tst(ula_uc_arch)
-# Loading altera_lnsim.altera_lnsim_components
+# Loading work.mipsfd_vhd_vec_tst(mipsfd_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
-# Loading cyclonev.cyclonev_atom_pack(body)
-# Loading cyclonev.cyclonev_components
-# Loading work.ula_uc(structure)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.mipsfd(structure)
 # Loading ieee.std_logic_arith(body)
-# Loading cyclonev.cyclonev_io_obuf(arch)
-# Loading cyclonev.cyclonev_io_ibuf(arch)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# after#32
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_ram_block(block_arch)
+# Loading cycloneive.cycloneive_ram_register(reg_arch)
+# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 353158 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
 
-# End time: 14:49:09 on Oct 16,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# after#33
+
+# Simulation time: 10000 ps
+
+# End time: 19:38:26 on Oct 30,2018, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading Z:/fredcurti-mac/descomp/aula14/Waveform.vwf...
+Reading Z:/fredcurti-mac/mipssingle/Waveform2.vwf...
 
-Reading Z:/fredcurti-mac/descomp/aula14/simulation/qsim/ULA_MIPS_DLX.msim.vcd...
+Reading Z:/fredcurti-mac/mipssingle/simulation/qsim/mipssingle.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to Z:/fredcurti-mac/descomp/aula14/simulation/qsim/ULA_MIPS_DLX_20181016144910.sim.vwf
+Writing the resulting VWF to Z:/fredcurti-mac/mipssingle/simulation/qsim/mipssingle_20181030193826.sim.vwf
 
 Finished VCD to VWF conversion.
 

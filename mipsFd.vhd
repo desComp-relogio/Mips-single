@@ -23,6 +23,8 @@ entity mipsFd is
         -- PORTAS SAIDA MEMORIA
         END_MEM         : out STD_LOGIC_VECTOR(31 DOWNTO 0);
         DATA_MEM_W      : out STD_LOGIC_VECTOR(31 DOWNTO 0);
+		  ULA_OUT			: out STD_LOGIC_VECTOR(31 DOWNTO 0);
+		  MEM_OUT			: out STD_LOGIC_VECTOR(31 DOWNTO 0);
 
         -- PORTAS SAIDA
         INST_OPCODE     : out STD_LOGIC_VECTOR(5 DOWNTO 0)
@@ -80,5 +82,8 @@ begin
     muxRtImm        : entity work.mux2 port map(A => aux_banco_reg2_out, B => aux_extensor_out, SEL => MUX_RT_IMM, Q => aux_mux_rt_imm_out);
     muxUlaMem       : entity work.mux2 port map(A => aux_ula_out, B => DATA_MEM_R, SEL => MUX_ULA_MEM, Q => aux_ula_mem_out);
     muxBeq          : entity work.mux2 port map(A => aux_som_pc_out, B => aux_som_beq_out, SEL => BEQ and aux_ula_z, Q => aux_mux_beq_out);
+	 
+	 ULA_OUT <= aux_ula_out;
+	 MEM_OUT <= aux_mem_inst_out;
 
 end architecture;

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for mipssingle
-Tue Oct 30 18:45:33 2018
-Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Tue Oct 30 19:37:23 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -13,48 +13,135 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0|altsyncram_qh41:auto_generated
+ 15. Parameter Settings for User Entity Instance: registradorGenerico:PC
+ 16. Parameter Settings for User Entity Instance: memoriaDeInst:memoriaDeInst
+ 17. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG0
+ 18. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG1
+ 19. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG2
+ 20. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG3
+ 21. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG4
+ 22. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG5
+ 23. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG6
+ 24. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG7
+ 25. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG8
+ 26. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG9
+ 27. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG10
+ 28. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG11
+ 29. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG12
+ 30. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG13
+ 31. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG14
+ 32. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG15
+ 33. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG16
+ 34. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG17
+ 35. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG18
+ 36. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG19
+ 37. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG20
+ 38. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG21
+ 39. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG22
+ 40. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG23
+ 41. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG24
+ 42. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG25
+ 43. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG26
+ 44. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG27
+ 45. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG28
+ 46. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG29
+ 47. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG30
+ 48. Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG31
+ 49. Parameter Settings for User Entity Instance: ulaMips:ula|mux2:Mux_A
+ 50. Parameter Settings for User Entity Instance: ulaMips:ula|mux2:Mux_B
+ 51. Parameter Settings for User Entity Instance: shifterLeft2:shifter2_26
+ 52. Parameter Settings for User Entity Instance: shifterLeft2:shifter2_32
+ 53. Parameter Settings for User Entity Instance: mux2:muxPc
+ 54. Parameter Settings for User Entity Instance: mux2:muxRtRd
+ 55. Parameter Settings for User Entity Instance: mux2:muxRtImm
+ 56. Parameter Settings for User Entity Instance: mux2:muxUlaMem
+ 57. Parameter Settings for User Entity Instance: mux2:muxBeq
+ 58. Parameter Settings for Inferred Entity Instance: memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0
+ 59. altsyncram Parameter Settings by Entity Instance
+ 60. Port Connectivity Checks: "shifterLeft2:shifter2_26"
+ 61. Port Connectivity Checks: "somador:somadorPc"
+ 62. Port Connectivity Checks: "ulaMips:ula|mux4:Mux_4"
+ 63. Port Connectivity Checks: "ulaMips:ula|ulinha:ULA"
+ 64. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG31"
+ 65. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG30"
+ 66. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG29"
+ 67. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG28"
+ 68. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG27"
+ 69. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG26"
+ 70. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG25"
+ 71. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG24"
+ 72. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG23"
+ 73. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG22"
+ 74. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG21"
+ 75. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG20"
+ 76. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG19"
+ 77. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG18"
+ 78. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG17"
+ 79. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG16"
+ 80. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG15"
+ 81. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG14"
+ 82. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG13"
+ 83. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG12"
+ 84. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG11"
+ 85. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG10"
+ 86. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG9"
+ 87. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG8"
+ 88. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG7"
+ 89. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG6"
+ 90. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG5"
+ 91. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG4"
+ 92. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG3"
+ 93. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG2"
+ 94. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG1"
+ 95. Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG0"
+ 96. Port Connectivity Checks: "registradorGenerico:PC"
+ 97. Post-Synthesis Netlist Statistics for Top Partition
+ 98. Elapsed Time Per Partition
+ 99. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 30 18:45:33 2018       ;
-; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 30 19:37:23 2018       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; mipssingle                                  ;
-; Top-level Entity Name              ; tristate                                    ;
+; Top-level Entity Name              ; mipsFd                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 65                                          ;
+; Total logic elements               ; 2,676                                       ;
+;     Total combinational functions  ; 1,748                                       ;
+;     Dedicated logic registers      ; 969                                         ;
+; Total registers                    ; 969                                         ;
+; Total pins                         ; 178                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
+; Total memory bits                  ; 16,384                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -66,7 +153,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; tristate           ; mipssingle         ;
+; Top-level entity name                                                      ; mipsFd             ; mipssingle         ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
 ; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
@@ -77,7 +164,7 @@ agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
 ; Safe State Machine                                                         ; Off                ; Off                ;
@@ -128,7 +215,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -144,7 +231,6 @@ agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -157,61 +243,167 @@ agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                    ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path             ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
-; tristate.vhd                     ; yes             ; User VHDL File  ; /home/raphacosta/mipssingle/tristate.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; ulinha.vhd                       ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/ulinha.vhd                                       ;         ;
+; ulaUc.vhd                        ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/ulaUc.vhd                                        ;         ;
+; ulaMips.vhd                      ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/ulaMips.vhd                                      ;         ;
+; somador.vhd                      ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/somador.vhd                                      ;         ;
+; shifterLeft2.vhd                 ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/shifterLeft2.vhd                                 ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/registradorGenerico.vhd                          ;         ;
+; mux32.vhd                        ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/mux32.vhd                                        ;         ;
+; mux4.vhd                         ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/mux4.vhd                                         ;         ;
+; mux2.vhd                         ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/mux2.vhd                                         ;         ;
+; mipsFd.vhd                       ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/mipsFd.vhd                                       ;         ;
+; memoriaDeInst.vhd                ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/memoriaDeInst.vhd                                ;         ;
+; extensorSinal.vhdl               ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/extensorSinal.vhdl                               ;         ;
+; bancoRegistradores.vhd           ; yes             ; User VHDL File                         ; Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd                           ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_qh41.tdf           ; yes             ; Auto-Generated Megafunction            ; Z:/fredcurti-mac/mipssingle/db/altsyncram_qh41.tdf                           ;         ;
+; initrom.mif                      ; yes             ; Auto-Found Memory Initialization File  ; Z:/fredcurti-mac/mipssingle/initrom.mif                                      ;         ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-;                                             ;          ;
-; Total combinational functions               ; 0        ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 0        ;
-;     -- 3 input functions                    ; 0        ;
-;     -- <=2 input functions                  ; 0        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 0        ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 65       ;
-;                                             ;          ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; EN~input ;
-; Maximum fan-out                             ; 32       ;
-; Total fan-out                               ; 129      ;
-; Average fan-out                             ; 0.99     ;
-+---------------------------------------------+----------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 2,676     ;
+;                                             ;           ;
+; Total combinational functions               ; 1748      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 1529      ;
+;     -- 3 input functions                    ; 155       ;
+;     -- <=2 input functions                  ; 64        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1732      ;
+;     -- arithmetic mode                      ; 16        ;
+;                                             ;           ;
+; Total registers                             ; 969       ;
+;     -- Dedicated logic registers            ; 969       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 178       ;
+; Total memory bits                           ; 16384     ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 1001      ;
+; Total fan-out                               ; 10195     ;
+; Average fan-out                             ; 3.28      ;
++---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |tristate                  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |tristate           ; tristate    ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                     ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                         ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+---------------------+--------------+
+; |mipsFd                                   ; 1748 (15)           ; 969 (0)                   ; 16384       ; 0            ; 0       ; 0         ; 178  ; 0            ; |mipsFd                                                                                     ; mipsFd              ; work         ;
+;    |bancoRegistradores:bancoReg|          ; 697 (48)            ; 960 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg                                                         ; bancoRegistradores  ; work         ;
+;       |mux32:MUX_END_REG_1|               ; 649 (649)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|mux32:MUX_END_REG_1                                     ; mux32               ; work         ;
+;       |registradorGenerico:REG10|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG10                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG11|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG11                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG12|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG12                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG13|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG13                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG14|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG14                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG15|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG15                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG16|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG16                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG17|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG17                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG18|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG18                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG1|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG1                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG20|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG20                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG21|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG21                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG22|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG22                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG23|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG23                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG24|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG24                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG25|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG25                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG26|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG26                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG27|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG27                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG28|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG28                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG29|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG29                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG2|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG2                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG30|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG30                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG31|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG31                               ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG3|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG3                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG4|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG4                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG5|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG5                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG6|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG6                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG7|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG7                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG8|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG8                                ; registradorGenerico ; work         ;
+;       |registradorGenerico:REG9|          ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|bancoRegistradores:bancoReg|registradorGenerico:REG9                                ; registradorGenerico ; work         ;
+;    |memoriaDeInst:memoriaDeInst|          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|memoriaDeInst:memoriaDeInst                                                         ; memoriaDeInst       ; work         ;
+;       |altsyncram:content_rtl_0|          ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0                                ; altsyncram          ; work         ;
+;          |altsyncram_qh41:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0|altsyncram_qh41:auto_generated ; altsyncram_qh41     ; work         ;
+;    |mux2:muxPc|                           ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|mux2:muxPc                                                                          ; mux2                ; work         ;
+;    |mux2:muxRtRd|                         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|mux2:muxRtRd                                                                        ; mux2                ; work         ;
+;    |mux2:muxUlaMem|                       ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|mux2:muxUlaMem                                                                      ; mux2                ; work         ;
+;    |registradorGenerico:PC|               ; 0 (0)               ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|registradorGenerico:PC                                                              ; registradorGenerico ; work         ;
+;    |somador:somadorBeq|                   ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|somador:somadorBeq                                                                  ; somador             ; work         ;
+;    |somador:somadorPc|                    ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|somador:somadorPc                                                                   ; somador             ; work         ;
+;    |ulaMips:ula|                          ; 969 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|ulaMips:ula                                                                         ; ulaMips             ; work         ;
+;       |mux2:Mux_B|                        ; 854 (854)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|ulaMips:ula|mux2:Mux_B                                                              ; mux2                ; work         ;
+;       |mux4:Mux_4|                        ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|ulaMips:ula|mux4:Mux_4                                                              ; mux4                ; work         ;
+;       |ulinha:ULA|                        ; 50 (50)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|ulaMips:ula|ulinha:ULA                                                              ; ulinha              ; work         ;
+;    |ulaUc:ucUla|                          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipsFd|ulaUc:ucUla                                                                         ; ulaUc               ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                               ;
++------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-------------+
+; Name                                                                                           ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF         ;
++------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-------------+
+; memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0|altsyncram_qh41:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 32           ; --           ; --           ; 16384 ; initROM.mif ;
++------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                            ;
++------------------------------------------------------------------+--------------------------------------------+
+; Register name                                                    ; Reason for Removal                         ;
++------------------------------------------------------------------+--------------------------------------------+
+; bancoRegistradores:bancoReg|registradorGenerico:REG0|DOUT[0..31] ; Stuck at GND due to stuck port data_in     ;
+; registradorGenerico:PC|DOUT[1]                                   ; Merged with registradorGenerico:PC|DOUT[0] ;
+; registradorGenerico:PC|DOUT[0]                                   ; Stuck at GND due to stuck port data_in     ;
+; registradorGenerico:PC|DOUT[11..31]                              ; Lost fanout                                ;
+; Total Number of Removed Registers = 55                           ;                                            ;
++------------------------------------------------------------------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++---------------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
+; Register name                                                 ; Reason for Removal        ; Registers Removed due to This Register                          ;
++---------------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
+; bancoRegistradores:bancoReg|registradorGenerico:REG0|DOUT[31] ; Stuck at GND              ; registradorGenerico:PC|DOUT[0], registradorGenerico:PC|DOUT[24] ;
+;                                                               ; due to stuck port data_in ;                                                                 ;
++---------------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -219,27 +411,920 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 969   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 969   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                            ;
++--------------------------------------+-------------------------------------------+------+
+; Register Name                        ; Megafunction                              ; Type ;
++--------------------------------------+-------------------------------------------+------+
+; memoriaDeInst:memoriaDeInst|Q[0..31] ; memoriaDeInst:memoriaDeInst|content_rtl_0 ; RAM  ;
++--------------------------------------+-------------------------------------------+------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; 3:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |mipsFd|registradorGenerico:PC|DOUT[27]                           ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |mipsFd|ulaMips:ula|mux4:Mux_4|Mux24                              ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |mipsFd|bancoRegistradores:bancoReg|mux32:MUX_END_REG_1|Q_OUT[21] ;
+; 66:1               ; 32 bits   ; 1408 LEs      ; 1312 LEs             ; 96 LEs                 ; No         ; |mipsFd|ulaMips:ula|mux2:Mux_B|Q[17]                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Source assignments for memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0|altsyncram_qh41:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                           ;
++---------------------------------+--------------------+------+----------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                            ;
++---------------------------------+--------------------+------+----------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico:PC ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaDeInst:memoriaDeInst ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 32    ; Signed Integer                                  ;
+; addr_width     ; 9     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG0 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG1 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG2 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG3 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG4 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG5 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG6 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG7 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG8 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG9 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG10 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG11 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG12 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG13 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG14 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG15 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG16 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG17 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG18 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG19 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG20 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG21 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG22 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG23 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG24 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG25 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG26 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG27 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG28 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG29 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG30 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradores:bancoReg|registradorGenerico:REG31 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ulaMips:ula|mux2:Mux_A ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; data_len       ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ulaMips:ula|mux2:Mux_B ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; data_len       ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shifterLeft2:shifter2_26 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; byte_width     ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shifterLeft2:shifter2_32 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; byte_width     ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:muxPc ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; data_len       ; 32    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:muxRtRd ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; data_len       ; 5     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:muxRtImm ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; data_len       ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:muxUlaMem ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; data_len       ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:muxBeq ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; data_len       ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0 ;
++------------------------------------+----------------------+-------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                      ;
++------------------------------------+----------------------+-------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                   ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                            ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                   ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                   ;
+; WIDTH_A                            ; 32                   ; Untyped                                   ;
+; WIDTHAD_A                          ; 9                    ; Untyped                                   ;
+; NUMWORDS_A                         ; 512                  ; Untyped                                   ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                   ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                   ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                   ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                   ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                   ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                   ;
+; WIDTH_B                            ; 1                    ; Untyped                                   ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                   ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                   ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                   ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                   ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                   ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                   ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                   ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                   ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                   ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                   ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                   ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                   ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                   ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                   ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                   ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                   ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                   ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                   ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                   ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                   ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                   ;
+; INIT_FILE                          ; initROM.mif          ; Untyped                                   ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                   ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                   ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                   ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                   ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                   ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                   ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                   ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                   ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                   ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                   ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                   ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                   ;
+; CBXI_PARAMETER                     ; altsyncram_qh41      ; Untyped                                   ;
++------------------------------------+----------------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                 ;
++-------------------------------------------+------------------------------------------------------+
+; Name                                      ; Value                                                ;
++-------------------------------------------+------------------------------------------------------+
+; Number of entity instances                ; 1                                                    ;
+; Entity Instance                           ; memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                  ;
+;     -- WIDTH_A                            ; 32                                                   ;
+;     -- NUMWORDS_A                         ; 512                                                  ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                         ;
+;     -- WIDTH_B                            ; 1                                                    ;
+;     -- NUMWORDS_B                         ; 1                                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                               ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                         ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                 ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                            ;
++-------------------------------------------+------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "shifterLeft2:shifter2_26"                                                                ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; a[31..26] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q[31..28] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "somador:somadorPc" ;
++----------+-------+----------+-----------------+
+; Port     ; Type  ; Severity ; Details         ;
++----------+-------+----------+-----------------+
+; a[31..3] ; Input ; Info     ; Stuck at GND    ;
+; a[1..0]  ; Input ; Info     ; Stuck at GND    ;
+; a[2]     ; Input ; Info     ; Stuck at VCC    ;
++----------+-------+----------+-----------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "ulaMips:ula|mux4:Mux_4" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; d[31..1] ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ulaMips:ula|ulinha:ULA"                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; z    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG31" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG30" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG29" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG28" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG27" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG26" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG25" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG24" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG23" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG22" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG21" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG20" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG19" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG18" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG17" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG16" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG15" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG14" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG13" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG12" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG11" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG10" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG9" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG8" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG7" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG6" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG5" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG4" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG3" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG2" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG1" ;
++------+-------+----------+--------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                ;
++------+-------+----------+--------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                           ;
++------+-------+----------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bancoRegistradores:bancoReg|registradorGenerico:REG0" ;
++--------+-------+----------+------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                              ;
++--------+-------+----------+------------------------------------------------------+
+; din    ; Input ; Info     ; Stuck at GND                                         ;
+; enable ; Input ; Info     ; Stuck at VCC                                         ;
+; rst    ; Input ; Info     ; Stuck at GND                                         ;
++--------+-------+----------+------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico:PC" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; rst  ; Input ; Info     ; Stuck at GND             ;
++------+-------+----------+--------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+--------------------+--------------------------------+
-; Type               ; Count                          ;
-+--------------------+--------------------------------+
-; boundary_port      ; 65                             ;
-; cycloneiii_io_obuf ; 32                             ;
-;                    ;                                ;
-; Max LUT depth      ; 0.00                           ;
-; Average LUT depth  ; 0.00                           ;
-+--------------------+--------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 178                         ;
+; cycloneiii_ff         ; 969                         ;
+;     ENA               ; 960                         ;
+;     ENA SLD           ; 9                           ;
+; cycloneiii_lcell_comb ; 1749                        ;
+;     arith             ; 16                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 8                           ;
+;     normal            ; 1733                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 55                          ;
+;         3 data inputs ; 147                         ;
+;         4 data inputs ; 1529                        ;
+; cycloneiii_ram_block  ; 32                          ;
+;                       ;                             ;
+; Max LUT depth         ; 43.00                       ;
+; Average LUT depth     ; 28.82                       ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -247,7 +1332,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -256,81 +1341,207 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Tue Oct 30 18:45:22 2018
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Oct 30 19:36:46 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mipssingle -c mipssingle
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ulinha.vhd
-    Info (12022): Found design unit 1: ulinha-ulinhaArch File: /home/raphacosta/mipssingle/ulinha.vhd Line: 22
-    Info (12023): Found entity 1: ulinha File: /home/raphacosta/mipssingle/ulinha.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file ulaUc.vhd
-    Info (12022): Found design unit 1: ulaUc-ulaUcArch File: /home/raphacosta/mipssingle/ulaUc.vhd Line: 23
-    Info (12023): Found entity 1: ulaUc File: /home/raphacosta/mipssingle/ulaUc.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file ulaMips.vhd
-    Info (12022): Found design unit 1: ulaMips-arch_mips File: /home/raphacosta/mipssingle/ulaMips.vhd Line: 22
-    Info (12023): Found entity 1: ulaMips File: /home/raphacosta/mipssingle/ulaMips.vhd Line: 6
+    Info (12022): Found design unit 1: ulinha-ulinhaArch File: Z:/fredcurti-mac/mipssingle/ulinha.vhd Line: 22
+    Info (12023): Found entity 1: ulinha File: Z:/fredcurti-mac/mipssingle/ulinha.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ulauc.vhd
+    Info (12022): Found design unit 1: ulaUc-ulaUcArch File: Z:/fredcurti-mac/mipssingle/ulaUc.vhd Line: 23
+    Info (12023): Found entity 1: ulaUc File: Z:/fredcurti-mac/mipssingle/ulaUc.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file ulamips.vhd
+    Info (12022): Found design unit 1: ulaMips-arch_mips File: Z:/fredcurti-mac/mipssingle/ulaMips.vhd Line: 22
+    Info (12023): Found entity 1: ulaMips File: Z:/fredcurti-mac/mipssingle/ulaMips.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
-    Info (12022): Found design unit 1: somador-somadorArch File: /home/raphacosta/mipssingle/somador.vhd Line: 17
-    Info (12023): Found entity 1: somador File: /home/raphacosta/mipssingle/somador.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file shifterLeft2.vhd
-    Info (12022): Found design unit 1: shifterLeft2-shifterLeft2Arch File: /home/raphacosta/mipssingle/shifterLeft2.vhd Line: 19
-    Info (12023): Found entity 1: shifterLeft2 File: /home/raphacosta/mipssingle/shifterLeft2.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file registradorGenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-registradorGenericoArch File: /home/raphacosta/mipssingle/registradorGenerico.vhd Line: 17
-    Info (12023): Found entity 1: registradorGenerico File: /home/raphacosta/mipssingle/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: somador-somadorArch File: Z:/fredcurti-mac/mipssingle/somador.vhd Line: 17
+    Info (12023): Found entity 1: somador File: Z:/fredcurti-mac/mipssingle/somador.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file shifterleft2.vhd
+    Info (12022): Found design unit 1: shifterLeft2-shifterLeft2Arch File: Z:/fredcurti-mac/mipssingle/shifterLeft2.vhd Line: 19
+    Info (12023): Found entity 1: shifterLeft2 File: Z:/fredcurti-mac/mipssingle/shifterLeft2.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-registradorGenericoArch File: Z:/fredcurti-mac/mipssingle/registradorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: registradorGenerico File: Z:/fredcurti-mac/mipssingle/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux32.vhd
-    Info (12022): Found design unit 1: mux32-mux32Arch File: /home/raphacosta/mipssingle/mux32.vhd Line: 16
-    Info (12023): Found entity 1: mux32 File: /home/raphacosta/mipssingle/mux32.vhd Line: 6
+    Info (12022): Found design unit 1: mux32-mux32Arch File: Z:/fredcurti-mac/mipssingle/mux32.vhd Line: 16
+    Info (12023): Found entity 1: mux32 File: Z:/fredcurti-mac/mipssingle/mux32.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux4.vhd
-    Info (12022): Found design unit 1: mux4-mux4Arch File: /home/raphacosta/mipssingle/mux4.vhd Line: 15
-    Info (12023): Found entity 1: mux4 File: /home/raphacosta/mipssingle/mux4.vhd Line: 4
+    Info (12022): Found design unit 1: mux4-mux4Arch File: Z:/fredcurti-mac/mipssingle/mux4.vhd Line: 15
+    Info (12023): Found entity 1: mux4 File: Z:/fredcurti-mac/mipssingle/mux4.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
-    Info (12022): Found design unit 1: mux2-mux2Arch File: /home/raphacosta/mipssingle/mux2.vhd Line: 20
-    Info (12023): Found entity 1: mux2 File: /home/raphacosta/mipssingle/mux2.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file mipsUc.vhd
-    Info (12022): Found design unit 1: mipsUc-mipsUcArch File: /home/raphacosta/mipssingle/mipsUc.vhd Line: 29
-    Info (12023): Found entity 1: mipsUc File: /home/raphacosta/mipssingle/mipsUc.vhd Line: 10
+    Info (12022): Found design unit 1: mux2-mux2Arch File: Z:/fredcurti-mac/mipssingle/mux2.vhd Line: 20
+    Info (12023): Found entity 1: mux2 File: Z:/fredcurti-mac/mipssingle/mux2.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mipsuc.vhd
+    Info (12022): Found design unit 1: mipsUc-mipsUcArch File: Z:/fredcurti-mac/mipssingle/mipsUc.vhd Line: 29
+    Info (12023): Found entity 1: mipsUc File: Z:/fredcurti-mac/mipssingle/mipsUc.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file mipssingle.vhd
-    Info (12022): Found design unit 1: mipssingle-mipssingleArch File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 20
-    Info (12023): Found entity 1: mipssingle File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file mipsFd.vhd
-    Info (12022): Found design unit 1: mipsFd-mipsFdArch File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 33
-    Info (12023): Found entity 1: mipsFd File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file memoriaDeInst.vhd
-    Info (12022): Found design unit 1: memoriaDeInst-memoriaDeInstArch File: /home/raphacosta/mipssingle/memoriaDeInst.vhd Line: 19
-    Info (12023): Found entity 1: memoriaDeInst File: /home/raphacosta/mipssingle/memoriaDeInst.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file memoriaDeDados.vhd
-    Info (12022): Found design unit 1: memoriaDeDados-memoriaDeDadosArch File: /home/raphacosta/mipssingle/memoriaDeDados.vhd Line: 17
-    Info (12023): Found entity 1: memoriaDeDados File: /home/raphacosta/mipssingle/memoriaDeDados.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file memoriaAll.vhd
-    Info (12022): Found design unit 1: memoriaAll-memoriaAllArch File: /home/raphacosta/mipssingle/memoriaAll.vhd Line: 17
-    Info (12023): Found entity 1: memoriaAll File: /home/raphacosta/mipssingle/memoriaAll.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file extensorSinal.vhdl
-    Info (12022): Found design unit 1: extensorSinal-extensorSinalArch File: /home/raphacosta/mipssingle/extensorSinal.vhdl Line: 15
-    Info (12023): Found entity 1: extensorSinal File: /home/raphacosta/mipssingle/extensorSinal.vhdl Line: 6
+    Info (12022): Found design unit 1: mipssingle-mipssingleArch File: Z:/fredcurti-mac/mipssingle/mipssingle.vhd Line: 20
+    Info (12023): Found entity 1: mipssingle File: Z:/fredcurti-mac/mipssingle/mipssingle.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mipsfd.vhd
+    Info (12022): Found design unit 1: mipsFd-mipsFdArch File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 35
+    Info (12023): Found entity 1: mipsFd File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file memoriadeinst.vhd
+    Info (12022): Found design unit 1: memoriaDeInst-memoriaDeInstArch File: Z:/fredcurti-mac/mipssingle/memoriaDeInst.vhd Line: 19
+    Info (12023): Found entity 1: memoriaDeInst File: Z:/fredcurti-mac/mipssingle/memoriaDeInst.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memoriadedados.vhd
+    Info (12022): Found design unit 1: memoriaDeDados-memoriaDeDadosArch File: Z:/fredcurti-mac/mipssingle/memoriaDeDados.vhd Line: 17
+    Info (12023): Found entity 1: memoriaDeDados File: Z:/fredcurti-mac/mipssingle/memoriaDeDados.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaall.vhd
+    Info (12022): Found design unit 1: memoriaAll-memoriaAllArch File: Z:/fredcurti-mac/mipssingle/memoriaAll.vhd Line: 17
+    Info (12023): Found entity 1: memoriaAll File: Z:/fredcurti-mac/mipssingle/memoriaAll.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file extensorsinal.vhdl
+    Info (12022): Found design unit 1: extensorSinal-extensorSinalArch File: Z:/fredcurti-mac/mipssingle/extensorSinal.vhdl Line: 15
+    Info (12023): Found entity 1: extensorSinal File: Z:/fredcurti-mac/mipssingle/extensorSinal.vhdl Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
-    Info (12022): Found design unit 1: decoder-decoderArch File: /home/raphacosta/mipssingle/decoder.vhd Line: 12
-    Info (12023): Found entity 1: decoder File: /home/raphacosta/mipssingle/decoder.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/raphacosta/mipssingle/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: /home/raphacosta/mipssingle/conversorHex7Seg.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file bancoRegistradores.vhd
-    Info (12022): Found design unit 1: bancoRegistradores-bancoRegistradoresArch File: /home/raphacosta/mipssingle/bancoRegistradores.vhd Line: 18
-    Info (12023): Found entity 1: bancoRegistradores File: /home/raphacosta/mipssingle/bancoRegistradores.vhd Line: 5
+    Info (12022): Found design unit 1: decoder-decoderArch File: Z:/fredcurti-mac/mipssingle/decoder.vhd Line: 12
+    Info (12023): Found entity 1: decoder File: Z:/fredcurti-mac/mipssingle/decoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: Z:/fredcurti-mac/mipssingle/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: Z:/fredcurti-mac/mipssingle/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
+    Info (12022): Found design unit 1: bancoRegistradores-bancoRegistradoresArch File: Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd Line: 18
+    Info (12023): Found entity 1: bancoRegistradores File: Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file tristate.vhd
-    Info (12022): Found design unit 1: tristate-tristateArch File: /home/raphacosta/mipssingle/tristate.vhd Line: 13
-    Info (12023): Found entity 1: tristate File: /home/raphacosta/mipssingle/tristate.vhd Line: 5
-Info (12127): Elaborating entity "tristate" for the top level hierarchy
+    Info (12022): Found design unit 1: tristate-tristateArch File: Z:/fredcurti-mac/mipssingle/tristate.vhd Line: 13
+    Info (12023): Found entity 1: tristate File: Z:/fredcurti-mac/mipssingle/tristate.vhd Line: 5
+Info (12127): Elaborating entity "mipsFd" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at mipsFd.vhd(24): used implicit default value for signal "END_MEM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+Warning (10541): VHDL Signal Declaration warning at mipsFd.vhd(25): used implicit default value for signal "DATA_MEM_W" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+Warning (10541): VHDL Signal Declaration warning at mipsFd.vhd(30): used implicit default value for signal "INST_OPCODE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 30
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 57
+Info (12128): Elaborating entity "memoriaDeInst" for hierarchy "memoriaDeInst:memoriaDeInst" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 58
+Warning (10541): VHDL Signal Declaration warning at memoriaDeInst.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: Z:/fredcurti-mac/mipssingle/memoriaDeInst.vhd Line: 22
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:bancoReg" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 59
+Warning (10540): VHDL Signal Declaration warning at bancoRegistradores.vhd(19): used explicit default value for signal "end3_convert" because signal was never assigned a value File: Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd Line: 19
+Warning (10540): VHDL Signal Declaration warning at bancoRegistradores.vhd(21): used explicit default value for signal "reset_reg" because signal was never assigned a value File: Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at bancoRegistradores.vhd(71): signal "HAB_ESCRITA_REG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at bancoRegistradores.vhd(71): signal "end3_convert" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd Line: 71
+Info (12128): Elaborating entity "mux32" for hierarchy "bancoRegistradores:bancoReg|mux32:MUX_END_REG_1" File: Z:/fredcurti-mac/mipssingle/bancoRegistradores.vhd Line: 60
+Info (12128): Elaborating entity "ulaMips" for hierarchy "ulaMips:ula" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 66
+Warning (10036): Verilog HDL or VHDL warning at ulaMips.vhd(27): object "z" assigned a value but never read File: Z:/fredcurti-mac/mipssingle/ulaMips.vhd Line: 27
+Info (12128): Elaborating entity "mux2" for hierarchy "ulaMips:ula|mux2:Mux_A" File: Z:/fredcurti-mac/mipssingle/ulaMips.vhd Line: 33
+Info (12128): Elaborating entity "ulinha" for hierarchy "ulaMips:ula|ulinha:ULA" File: Z:/fredcurti-mac/mipssingle/ulaMips.vhd Line: 35
+Info (12128): Elaborating entity "mux4" for hierarchy "ulaMips:ula|mux4:Mux_4" File: Z:/fredcurti-mac/mipssingle/ulaMips.vhd Line: 36
+Info (12128): Elaborating entity "ulaUc" for hierarchy "ulaUc:ucUla" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 70
+Info (12128): Elaborating entity "somador" for hierarchy "somador:somadorPc" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 72
+Info (12128): Elaborating entity "extensorSinal" for hierarchy "extensorSinal:extensorSinal" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 75
+Info (12128): Elaborating entity "shifterLeft2" for hierarchy "shifterLeft2:shifter2_26" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 77
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:muxRtRd" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 81
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "memoriaDeInst:memoriaDeInst|content_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 9
+        Info (286033): Parameter NUMWORDS_A set to 512
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to initROM.mif
+Info (12130): Elaborated megafunction instantiation "memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0"
+Info (12133): Instantiated megafunction "memoriaDeInst:memoriaDeInst|altsyncram:content_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "9"
+    Info (12134): Parameter "NUMWORDS_A" = "512"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "initROM.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qh41.tdf
+    Info (12023): Found entity 1: altsyncram_qh41 File: Z:/fredcurti-mac/mipssingle/db/altsyncram_qh41.tdf Line: 27
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "END_MEM[0]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[1]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[2]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[3]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[4]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[5]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[6]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[7]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[8]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[9]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[10]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[11]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[12]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[13]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[14]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[15]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[16]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[17]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[18]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[19]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[20]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[21]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[22]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[23]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[24]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[25]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[26]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[27]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[28]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[29]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[30]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "END_MEM[31]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 24
+    Warning (13410): Pin "DATA_MEM_W[0]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[1]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[2]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[3]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[4]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[5]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[6]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[7]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[8]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[9]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[10]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[11]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[12]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[13]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[14]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[15]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[16]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[17]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[18]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[19]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[20]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[21]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[22]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[23]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[24]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[25]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[26]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[27]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[28]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[29]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[30]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "DATA_MEM_W[31]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 25
+    Warning (13410): Pin "INST_OPCODE[0]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 30
+    Warning (13410): Pin "INST_OPCODE[1]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 30
+    Warning (13410): Pin "INST_OPCODE[2]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 30
+    Warning (13410): Pin "INST_OPCODE[3]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 30
+    Warning (13410): Pin "INST_OPCODE[4]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 30
+    Warning (13410): Pin "INST_OPCODE[5]" is stuck at GND File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 30
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 21 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 65 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 33 input pins
-    Info (21059): Implemented 32 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1253 megabytes
-    Info: Processing ended: Tue Oct 30 18:45:33 2018
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "HAB_LEITURA_MEM" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 18
+    Warning (15610): No output dependent on input pin "HAB_ESCRITA_MEM" File: Z:/fredcurti-mac/mipssingle/mipsFd.vhd Line: 19
+Info (21057): Implemented 2918 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 44 input pins
+    Info (21059): Implemented 134 output pins
+    Info (21061): Implemented 2708 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Tue Oct 30 19:37:23 2018
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:50
 
 
