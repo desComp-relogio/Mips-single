@@ -115,50 +115,106 @@ begin
     begin
         case sw_value is
             when "0000" =>
-                aux_hex_0 => MEM_OUT(3 DOWNTO 0);
-                aux_hex_1 => MEM_OUT(23 DOWNTO 20);		
-                aux_hex_2 => MEM_OUT(19 DOWNTO 16);
-                aux_hex_3 => MEM_OUT(15 DOWNTO 12);	
-                aux_hex_4 => MEM_OUT(11 DOWNTO 8;
-                aux_hex_5 => MEM_OUT(7 DOWNTO 4);
-                aux_hex_6 => MEM_OUT(27 DOWNTO 24);
+                aux_hex_0 <= MEM_OUT(3 DOWNTO 0);
+                aux_hex_1 <= MEM_OUT(7 DOWNTO 4);
+                aux_hex_2 <= MEM_OUT(11 DOWNTO 8);		
+                aux_hex_3 <= MEM_OUT(15 DOWNTO 12);
+                aux_hex_4 <= MEM_OUT(19 DOWNTO 16);	
+                aux_hex_5 <= MEM_OUT(23 DOWNTO 20);
+                aux_hex_6 <= MEM_OUT(27 DOWNTO 24);
+                aux_hex_7 <= MEM_OUT(31 DOWNTO 28);
+
             when "0001" =>
-                aux_hex_0 => aux_dado_lido_1(3 DOWNTO 0);
-                aux_hex_1 => aux_dado_lido_1(23 DOWNTO 20);		
-                aux_hex_2 => aux_dado_lido_1(19 DOWNTO 16);
-                aux_hex_3 => aux_dado_lido_1(15 DOWNTO 12);	
-                aux_hex_4 => aux_dado_lido_1(11 DOWNTO 8;
-                aux_hex_5 => aux_dado_lido_1(7 DOWNTO 4);
-                aux_hex_6 => aux_dado_lido_1(27 DOWNTO 24);
+                aux_hex_0 <= aux_dado_lido_1(3 DOWNTO 0);
+                aux_hex_1 <= aux_dado_lido_1(7 DOWNTO 4);
+                aux_hex_2 <= aux_dado_lido_1(11 DOWNTO 8);		
+                aux_hex_3 <= aux_dado_lido_1(15 DOWNTO 12);
+                aux_hex_4 <= aux_dado_lido_1(19 DOWNTO 16);	
+                aux_hex_5 <= aux_dado_lido_1(23 DOWNTO 20);
+                aux_hex_6 <= aux_dado_lido_1(27 DOWNTO 24);
+                aux_hex_7 <= aux_dado_lido_1(31 DOWNTO 28);
 
             when "0010" =>
-                aux_hex_0 => aux_dado_lido_2(3 DOWNTO 0);
-                aux_hex_1 => aux_dado_lido_2(23 DOWNTO 20);		
-                aux_hex_2 => aux_dado_lido_2(19 DOWNTO 16);
-                aux_hex_3 => aux_dado_lido_2(15 DOWNTO 12);	
-                aux_hex_4 => aux_dado_lido_2(11 DOWNTO 8;
-                aux_hex_5 => aux_dado_lido_2(7 DOWNTO 4);
-                aux_hex_6 => aux_dado_lido_2(27 DOWNTO 24);
+                aux_hex_0 <= aux_dado_lido_2(3 DOWNTO 0);
+                aux_hex_1 <= aux_dado_lido_2(7 DOWNTO 4);
+                aux_hex_2 <= aux_dado_lido_2(11 DOWNTO 8);		
+                aux_hex_3 <= aux_dado_lido_2(15 DOWNTO 12);
+                aux_hex_4 <= aux_dado_lido_2(19 DOWNTO 16);	
+                aux_hex_5 <= aux_dado_lido_2(23 DOWNTO 20);
+                aux_hex_6 <= aux_dado_lido_2(27 DOWNTO 24);
+                aux_hex_7 <= aux_dado_lido_2(31 DOWNTO 28);
+
+            when "0011" =>
+                aux_hex_0 <= ULA_OUT(3 DOWNTO 0);
+                aux_hex_1 <= ULA_OUT(7 DOWNTO 4);
+                aux_hex_2 <= ULA_OUT(11 DOWNTO 8);		
+                aux_hex_3 <= ULA_OUT(15 DOWNTO 12);
+                aux_hex_4 <= ULA_OUT(19 DOWNTO 16);	
+                aux_hex_5 <= ULA_OUT(23 DOWNTO 20);
+                aux_hex_6 <= ULA_OUT(27 DOWNTO 24);
+                aux_hex_7 <= ULA_OUT(31 DOWNTO 28);
+            
+            when "0100" =>
+                aux_hex_0 <= aux_op_out_top;
+                aux_hex_1 <= "0000";
+                aux_hex_2 <= "0000";
+                aux_hex_3 <= "0000";
+                aux_hex_4 <= "0000";
+                aux_hex_5 <= "0000";
+                aux_hex_6 <= "0000";
+                aux_hex_7 <= "0000";
+
+            when "0101" =>
+                aux_hex_0 <= aux_data_mem_w(3 DOWNTO 0);
+                aux_hex_1 <= aux_data_mem_w(7 DOWNTO 4);
+                aux_hex_2 <= aux_data_mem_w(11 DOWNTO 8);		
+                aux_hex_3 <= aux_data_mem_w(15 DOWNTO 12);
+                aux_hex_4 <= aux_data_mem_w(19 DOWNTO 16);	
+                aux_hex_5 <= aux_data_mem_w(23 DOWNTO 20);
+                aux_hex_6 <= aux_data_mem_w(27 DOWNTO 24);
+                aux_hex_7 <= aux_data_mem_w(31 DOWNTO 28);
+
+            when "0110" =>
+                aux_hex_0 <= aux_data_mem_r(3 DOWNTO 0);
+                aux_hex_1 <= aux_data_mem_r(7 DOWNTO 4);
+                aux_hex_2 <= aux_data_mem_r(11 DOWNTO 8);		
+                aux_hex_3 <= aux_data_mem_r(15 DOWNTO 12);
+                aux_hex_4 <= aux_data_mem_r(19 DOWNTO 16);	
+                aux_hex_5 <= aux_data_mem_r(23 DOWNTO 20);
+                aux_hex_6 <= aux_data_mem_r(27 DOWNTO 24);
+                aux_hex_7 <= aux_data_mem_r(31 DOWNTO 28);
+
 
             when "0111" =>
-                aux_hex_0 => aux_end_mem(3 DOWNTO 0);
-                aux_hex_1 => aux_end_mem(23 DOWNTO 20);		
-                aux_hex_2 => aux_end_mem(19 DOWNTO 16);
-                aux_hex_3 => aux_end_mem(15 DOWNTO 12);	
-                aux_hex_4 => aux_end_mem(11 DOWNTO 8;
-                aux_hex_5 => aux_end_mem(7 DOWNTO 4);
-                aux_hex_6 => aux_end_mem(27 DOWNTO 24);
+                aux_hex_0 <= aux_end_mem(3 DOWNTO 0);
+                aux_hex_1 <= aux_end_mem(7 DOWNTO 4);
+                aux_hex_2 <= aux_end_mem(11 DOWNTO 8);		
+                aux_hex_3 <= aux_end_mem(15 DOWNTO 12);
+                aux_hex_4 <= aux_end_mem(19 DOWNTO 16);	
+                aux_hex_5 <= aux_end_mem(23 DOWNTO 20);
+                aux_hex_6 <= aux_end_mem(27 DOWNTO 24);
+                aux_hex_7 <= aux_end_mem(31 DOWNTO 28);
 
             when "1000" =>
-                aux_hex_0 => aux_pc_out(3 DOWNTO 0);
-                aux_hex_1 => aux_pc_out(23 DOWNTO 20);		
-                aux_hex_2 => aux_pc_out(19 DOWNTO 16);
-                aux_hex_3 => aux_pc_out(15 DOWNTO 12);	
-                aux_hex_4 => aux_pc_out(11 DOWNTO 8;
-                aux_hex_5 => aux_pc_out(7 DOWNTO 4);
-                aux_hex_6 => aux_pc_out(27 DOWNTO 24);
-                
-
+                aux_hex_0 <= aux_pc_out(3 DOWNTO 0);
+                aux_hex_1 <= aux_pc_out(7 DOWNTO 4);
+                aux_hex_2 <= aux_pc_out(11 DOWNTO 8);		
+                aux_hex_3 <= aux_pc_out(15 DOWNTO 12);
+                aux_hex_4 <= aux_pc_out(19 DOWNTO 16);	
+                aux_hex_5 <= aux_pc_out(23 DOWNTO 20);
+                aux_hex_6 <= aux_pc_out(27 DOWNTO 24);
+                aux_hex_7 <= aux_pc_out(31 DOWNTO 28);
+            
+            when others =>
+                aux_hex_0 <= "1111";
+                aux_hex_1 <= "1111";
+                aux_hex_2 <= "1111";
+                aux_hex_3 <= "1111";
+                aux_hex_4 <= "1111";
+                aux_hex_5 <= "1111";
+                aux_hex_6 <= "1111";
+                aux_hex_7 <= "1111";
+			end case;
     end process; 	
 	
     -- Chave: tristate

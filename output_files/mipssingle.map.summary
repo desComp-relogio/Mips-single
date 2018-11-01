@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Oct 31 20:35:46 2018
+Analysis & Synthesis Status : Successful - Wed Oct 31 21:44:26 2018
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : mipssingle
 Top-level Entity Name : mipssingle
 Family : Cyclone IV E
-Total logic elements : 16,534
-    Total combinational functions : 7,606
-    Dedicated logic registers : 9,225
-Total registers : 9225
+Total logic elements : 14,707
+    Total combinational functions : 6,727
+    Dedicated logic registers : 8,309
+Total registers : 8309
 Total pins : 106
 Total virtual pins : 0
-Total memory bits : 16,384
+Total memory bits : 1,536
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
