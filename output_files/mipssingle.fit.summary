@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Oct 31 17:19:44 2018
+Fitter Status : Successful - Thu Nov  1 19:14:31 2018
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : mipssingle
 Top-level Entity Name : mipssingle
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 86 / 114,480 ( < 1 % )
-    Total combinational functions : 78 / 114,480 ( < 1 % )
-    Dedicated logic registers : 45 / 114,480 ( < 1 % )
-Total registers : 45
+Total logic elements : 3,275 / 114,480 ( 3 % )
+    Total combinational functions : 2,277 / 114,480 ( 2 % )
+    Dedicated logic registers : 2,169 / 114,480 ( 2 % )
+Total registers : 2169
 Total pins : 106 / 529 ( 20 % )
 Total virtual pins : 0
-Total memory bits : 384 / 3,981,312 ( < 1 % )
+Total memory bits : 1,536 / 3,981,312 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )

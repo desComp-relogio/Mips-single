@@ -42,11 +42,16 @@ architecture mipssingleArch of mipssingle is
 	 signal MEM_OUT				  : STD_LOGIC_VECTOR(31 downto 0);
 	 signal aux_op_out_top		  : STD_LOGIC_VECTOR(3 downto 0);
      signal aux_dado_lido_1, aux_dado_lido_2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
-     signal aux_pc_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
+     signal aux_pc_out 			  : STD_LOGIC_VECTOR(31 DOWNTO 0);
+	  signal aux_pc_reset        : STD_LOGIC;
+	  signal aux_hm				  : STD_LOGIC;
+	  signal aux_ula_z			  : STD_LOGIC;
+	  signal aux_som_beq			  : STD_LOGIC_VECTOR(31 downto 0);
+
 	 signal aux_hex_0, aux_hex_1, aux_hex_2, aux_hex_3, aux_hex_4, aux_hex_5, aux_hex_6, aux_hex_7 : STD_LOGIC_VECTOR(3 downto 0);
 	 signal sw_value : STD_LOGIC_VECTOR(3 DOWNTO 0);
     -- eae meu bacano é quarta feira ja? ja
-begin 
+begin
 	CLOCK <= not KEY(0);
     sw_value <= SW(3 DOWNTO 0);
     mipsUc      : entity work.mipsUc port map(
@@ -60,7 +65,7 @@ begin
 		  
 
     mipsFd      : entity work.mipsFd port map(
-        CLK => CLOCK,
+      CLK => CLOCK_50,
 		EN_BUT => not KEY(1), 
         MUX_PC_BEQ_JMP => aux_mux_pc_beq_jmp, MUX_RT_RD => aux_mux_rt_rd,
         MUX_RT_IMM => aux_mux_rt_imm, MUX_ULA_MEM => aux_mux_ula_mem,
@@ -74,16 +79,23 @@ begin
 		AUX_OP_OUT => aux_op_out_top,
 		DADO_LIDO_1 => aux_dado_lido_1,
         DADO_LIDO_2 => aux_dado_lido_2,
-        PC_OUT => aux_pc_out
+        PC_OUT => aux_pc_out,
+		  PC_RESET => aux_pc_reset,
+		  SW_INST => "00000000"&"00000000"&"00000000" & SW(15 DOWNTO 10) & "00",
+		  SEL_INST => SW(17),
+		  ZERO_aux => aux_ula_z,
+		  SOM_BEQ => aux_som_beq
     );
 
     memoria: entity work.memoriaAll port map(
-        CLK      		=> CLOCK,
+        CLK      		=> CLOCK_50,
         RD      		=> aux_hab_leitura_mem,
         WR 				=> aux_hab_escrita_mem,
         END_MEM 		=> aux_end_mem,
         DATA_MEM_W   => aux_data_mem_w,
-        DATA_MEM_R   => aux_data_mem_r
+        DATA_MEM_R   => aux_data_mem_r,
+		  HM				=> aux_hm
+
     ); 
 	
 	
@@ -113,6 +125,12 @@ begin
      
     process(all)
     begin
+--		  if (falling_edge(KEY(3))) then
+	     aux_pc_reset <= not KEY(3);
+--		  else
+--				aux_pc_reset <= '0';
+--		  end if;
+		  
         case sw_value is
             when "0000" =>
                 aux_hex_0 <= MEM_OUT(3 DOWNTO 0);
@@ -156,10 +174,10 @@ begin
             
             when "0100" =>
                 aux_hex_0 <= aux_op_out_top;
-                aux_hex_1 <= "0000";
-                aux_hex_2 <= "0000";
-                aux_hex_3 <= "0000";
-                aux_hex_4 <= "0000";
+                aux_hex_1 <= "000" & aux_hm;
+                aux_hex_2 <= "000" & aux_ula_z;
+                aux_hex_3 <= "000" & aux_beq;
+                aux_hex_4 <= "000" & aux_mux_pc_beq_jmp;
                 aux_hex_5 <= "0000";
                 aux_hex_6 <= "0000";
                 aux_hex_7 <= "0000";
@@ -204,7 +222,16 @@ begin
                 aux_hex_5 <= aux_pc_out(23 DOWNTO 20);
                 aux_hex_6 <= aux_pc_out(27 DOWNTO 24);
                 aux_hex_7 <= aux_pc_out(31 DOWNTO 28);
-            
+            when "1001" => 
+					 aux_hex_0 <= aux_som_beq(3 DOWNTO 0);
+                aux_hex_1 <= aux_som_beq(7 DOWNTO 4);
+                aux_hex_2 <= aux_som_beq(11 DOWNTO 8);		
+                aux_hex_3 <= aux_som_beq(15 DOWNTO 12);
+                aux_hex_4 <= aux_som_beq(19 DOWNTO 16);	
+                aux_hex_5 <= aux_som_beq(23 DOWNTO 20);
+                aux_hex_6 <= aux_som_beq(27 DOWNTO 24);
+                aux_hex_7 <= aux_som_beq(31 DOWNTO 28);
+				
             when others =>
                 aux_hex_0 <= "1111";
                 aux_hex_1 <= "1111";
@@ -215,6 +242,10 @@ begin
                 aux_hex_6 <= "1111";
                 aux_hex_7 <= "1111";
 			end case;
+			
+--			if(RISING_EDGE(CLOCK_50))
+--				
+--			end if;
     end process; 	
 	
     -- Chave: tristate

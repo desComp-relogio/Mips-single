@@ -10,14 +10,16 @@ entity memoriaAll is
         RD              : in STD_LOGIC;
         WR              : in STD_LOGIC;
 
-        DATA_MEM_R      : out STD_LOGIC_VECTOR(31 DOWNTO 0)
+        DATA_MEM_R      : out STD_LOGIC_VECTOR(31 DOWNTO 0);
+		  HM					: out std_logic
 	);
 end entity;
 
 architecture memoriaAllArch of memoriaAll is
-    signal HM: std_logic;
+    signal HM_aux: std_logic;
 begin
-    decoder: entity work.decoder port map(ENDERECO => END_MEM, habMEM => HM);
-    memoria64k: entity work.memoriaDeDados port map(CLK => CLK, LER => RD and HM, ESCREVER => WR and HM,
-        ENDERECO => END_MEM(15 downto 2), DADO_W => DATA_MEM_W, DADO_R => DATA_MEM_R);
+    decoder: entity work.decoder port map(ENDERECO => END_MEM, habMEM => HM_aux);
+    memoria64k: entity work.memoriaDeDados port map(CLK => CLK, LER => RD and HM_aux, ESCREVER => WR and HM_aux,
+        ENDERECO => END_MEM(15 downto 0), DADO_W => DATA_MEM_W, DADO_R => DATA_MEM_R);
+	 HM <= HM_aux;
 end architecture;

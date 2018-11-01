@@ -5,7 +5,7 @@ USE ieee.numeric_std.ALL;
 entity memoriaDeInst is
     generic (
         DATA_WIDTH : natural := 32;
-        ADDR_WIDTH : natural := 9
+        ADDR_WIDTH : natural := 6
     );
 
     port (

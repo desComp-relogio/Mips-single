@@ -15,7 +15,10 @@ entity mipsFd is
         ULA_OP          : in STD_LOGIC_VECTOR(1 DOWNTO 0);
         MUX_ULA_MEM     : in STD_LOGIC;
         BEQ             : in STD_LOGIC;
-		  
+		  PC_RESET			: in STD_LOGIC;
+		  SW_INST			: in STD_LOGIC_VECTOR(31 DOWNTO 0);
+		  SEL_INST			: in STD_LOGIC := '0';
+
         DATA_MEM_R      : in STD_LOGIC_VECTOR(31 DOWNTO 0);
 
         -- PORTAS SAIDA MEMORIA
@@ -33,8 +36,9 @@ entity mipsFd is
 
         -- PORTAS SAIDA
         INST_OPCODE     : out STD_LOGIC_VECTOR(5 DOWNTO 0);
-
-        PC_OUT          : out STD_LOGIC_VECTOR(31 DOWNTO 0)
+		  ZERO_aux			: out std_logic;
+        PC_OUT          : out STD_LOGIC_VECTOR(31 DOWNTO 0);
+		  SOM_BEQ			: out std_logic_vector(31 downto 0)
     );
 
 end entity;
@@ -59,9 +63,12 @@ architecture mipsFdArch of mipsFd is
     signal aux_ula_mem_out      : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_ula_z            : STD_LOGIC;
     signal aux_mux_rt_rd_out    : STD_LOGIC_VECTOR(4 DOWNTO 0);
+	 signal aux_pc_reset         : STD_LOGIC := '0';
+	 signal aux_mux_inst			  : STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 begin
-	 PC				  : entity work.registradorGenerico port map(DIN => aux_pc_in, DOUT => aux_pc_out, ENABLE => EN_BUT, CLK => CLK, RST => '0');
+	 PC				  : entity work.registradorGenerico port map(DIN => aux_mux_inst, DOUT => aux_pc_out, ENABLE => EN_BUT, CLK => CLK, RST => aux_pc_reset);
+	 muxInst			  : entity work.mux2 port map(A => aux_pc_in, B => SW_INST, SEL => SEL_INST, Q => aux_mux_inst);
     memoriaDeInst   : entity work.memoriaDeInst port map(ADDR => to_integer(unsigned(aux_pc_out(31 DOWNTO 2))), CLK => CLK, Q => aux_mem_inst_out);
     bancoReg        : entity work.bancoRegistradores port map(
         HAB_ESCRITA_REG => HAB_ESCRITA_REG, CLK => CLK,
@@ -98,13 +105,15 @@ begin
     DADO_LIDO_2 <= aux_banco_reg2_out;
     AUX_OP_OUT <= aux_op;
     PC_OUT <= aux_pc_out;
+	 ULA_OUT <= aux_ula_out;
 	 
 	 --CONCERTOS
 	INST_OPCODE <= aux_mem_inst_out(31 downto 26);
 	DATA_MEM_W  <= aux_banco_reg2_out;
 	END_MEM 	 <= aux_ula_out;
+	aux_pc_reset <= PC_RESET;
+	ZERO_aux <= aux_ula_z;
+	SOM_BEQ <= aux_som_beq_out;
 
-	 
-	 
 
 end architecture;
