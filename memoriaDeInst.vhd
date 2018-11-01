@@ -9,7 +9,7 @@ entity memoriaDeInst is
     );
 
     port (
-			ADDR: in integer range 0 to 2**ADDR_WIDTH-1;
+			ADDR: in integer range 0 to 2**ADDR_WIDTH-1 := 0;
 			CLK : in STD_LOGIC;
 			
 			Q: out std_logic_vector(DATA_WIDTH-1 downto 0)

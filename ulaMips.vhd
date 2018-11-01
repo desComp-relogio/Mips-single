@@ -32,7 +32,7 @@ begin
 	
 	Mux_A: entity work.mux2 port map (A => A, B => not A, SEL => INVERTE_A, q => r_a);
 	Mux_B: entity work.mux2 port map (A => B, B => not B, SEL => INVERTE_B, q => r_b);
-	ULA  : entity work.ulinha port map (A => r_a, B => r_b, CIN => CIN, q => r_ula, z => z, overflow => v);
+	ULA  : entity work.ulinha port map (A => r_a, B => r_b, CIN => CIN, Q => r_ula, Z => z, OVERFLOW => v);
 	Mux_4: entity work.mux4 port map (A => r_and, B => R_or, C => r_ula, D => slt, SEL => SEL, q => R);
 	r_or <=	r_a or r_b;
  	r_and <=	r_a and r_b;

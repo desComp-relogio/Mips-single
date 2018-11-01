@@ -18,6 +18,6 @@ architecture memoriaAllArch of memoriaAll is
     signal HM: std_logic;
 begin
     decoder: entity work.decoder port map(ENDERECO => END_MEM, habMEM => HM);
-    memoria64k: entity work.memoriaDeDados port map(CLK => CLK, LER => RD, ESCREVER => WR,
+    memoria64k: entity work.memoriaDeDados port map(CLK => CLK, LER => RD and HM, ESCREVER => WR and HM,
         ENDERECO => END_MEM(15 downto 2), DADO_W => DATA_MEM_W, DADO_R => DATA_MEM_R);
 end architecture;

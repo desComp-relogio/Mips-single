@@ -19,6 +19,9 @@ DATA_RADIX=HEX;
 
 CONTENT BEGIN
 --endereco : dado;
-    0    :   8C080004;
-    [1..511]: 2A2A2A2A;
+    0    :   00000000;
+    1    :   8C040004; -- Carrega o valor 4 da memoria(4) no regustrador 4
+    2    :   00042820; -- Soma o registrador 4 com o reg 0 e guarda no 5
+    3    :   00053020; -- Soma o registrador 5 com o 0 e guarda no 6
+    [4..511]: 2A2A2A2A;
 END;

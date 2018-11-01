@@ -15,19 +15,26 @@ entity mipsFd is
         ULA_OP          : in STD_LOGIC_VECTOR(1 DOWNTO 0);
         MUX_ULA_MEM     : in STD_LOGIC;
         BEQ             : in STD_LOGIC;
-        HAB_LEITURA_MEM : in STD_LOGIC;
-        HAB_ESCRITA_MEM : in STD_LOGIC;
-
+		  
         DATA_MEM_R      : in STD_LOGIC_VECTOR(31 DOWNTO 0);
 
         -- PORTAS SAIDA MEMORIA
         END_MEM         : out STD_LOGIC_VECTOR(31 DOWNTO 0);
         DATA_MEM_W      : out STD_LOGIC_VECTOR(31 DOWNTO 0);
 		  ULA_OUT			: out STD_LOGIC_VECTOR(31 DOWNTO 0);
-		  MEM_OUT			: out STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+        
+		  --TESTES
+		  AUX_OP_OUT		: out STD_LOGIC_VECTOR(3 DOWNTO 0);
+        MEM_OUT			: out STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+        DADO_LIDO_1     : out STD_LOGIC_VECTOR(31 DOWNTO 0);
+        DADO_LIDO_2     : out STD_LOGIC_VECTOR(31 DOWNTO 0);
 
         -- PORTAS SAIDA
-        INST_OPCODE     : out STD_LOGIC_VECTOR(5 DOWNTO 0)
+        INST_OPCODE     : out STD_LOGIC_VECTOR(5 DOWNTO 0);
+
+        PC_OUT          : out STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
 
 end entity;
@@ -38,7 +45,7 @@ architecture mipsFdArch of mipsFd is
     signal aux_pc_in            : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
     signal aux_pc_out           : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
     signal aux_mux_beq_out      : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    signal aux_mem_inst_out     : STD_LOGIC_VECTOR(31 DOWNTO 0);
+    signal aux_mem_inst_out     : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
     signal aux_som_pc_out       : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_banco_reg1_out   : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_banco_reg2_out   : STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -67,7 +74,9 @@ begin
         A => aux_banco_reg1_out, B => aux_mux_rt_imm_out, SEL => aux_op(1 DOWNTO 0), INVERTE_A => aux_op(3), INVERTE_B => aux_op(2), CIN => aux_op(2),
         R => aux_ula_out, ZERO => aux_ula_z
     );
-    ucUla           : entity work.ulaUc port map(FUNCT => aux_mem_inst_out(5 DOWNTO 0), UC_OUT => ULA_OP, Q => aux_op);
+	 
+	 
+    ucUla           : entity work.ulaUc port map(FUNCT => aux_mem_inst_out(5 DOWNTO 0), ULA_OP => ULA_OP, Q => aux_op);
 
     somadorPc       : entity work.somador port map(A => FOUR, B => aux_pc_out, Q => aux_som_pc_out);
     somadorBeq      : entity work.somador port map(A => aux_shifter32_out, B => aux_som_pc_out, Q => aux_som_beq_out);
@@ -83,7 +92,19 @@ begin
     muxUlaMem       : entity work.mux2 port map(A => aux_ula_out, B => DATA_MEM_R, SEL => MUX_ULA_MEM, Q => aux_ula_mem_out);
     muxBeq          : entity work.mux2 port map(A => aux_som_pc_out, B => aux_som_beq_out, SEL => BEQ and aux_ula_z, Q => aux_mux_beq_out);
 	 
-	 ULA_OUT <= aux_ula_out;
-	 MEM_OUT <= aux_mem_inst_out;
+	 
+    MEM_OUT <= aux_mem_inst_out;
+    DADO_LIDO_1 <= aux_banco_reg1_out;
+    DADO_LIDO_2 <= aux_banco_reg2_out;
+    AUX_OP_OUT <= aux_op;
+    PC_OUT <= aux_pc_out;
+	 
+	 --CONCERTOS
+	INST_OPCODE <= aux_mem_inst_out(31 downto 26);
+	DATA_MEM_W  <= aux_banco_reg2_out;
+	END_MEM 	 <= aux_ula_out;
+
+	 
+	 
 
 end architecture;
