@@ -1,5 +1,5 @@
 Fitter report for mipssingle
-Thu Nov  1 19:14:31 2018
+Tue Nov  6 15:11:09 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -68,17 +68,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov  1 19:14:31 2018       ;
+; Fitter Status                      ; Successful - Tue Nov  6 15:11:09 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; mipssingle                                  ;
 ; Top-level Entity Name              ; mipssingle                                  ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,275 / 114,480 ( 3 % )                     ;
-;     Total combinational functions  ; 2,277 / 114,480 ( 2 % )                     ;
-;     Dedicated logic registers      ; 2,169 / 114,480 ( 2 % )                     ;
-; Total registers                    ; 2169                                        ;
+; Total logic elements               ; 3,233 / 114,480 ( 3 % )                     ;
+;     Total combinational functions  ; 2,272 / 114,480 ( 2 % )                     ;
+;     Dedicated logic registers      ; 2,170 / 114,480 ( 2 % )                     ;
+; Total registers                    ; 2170                                        ;
 ; Total pins                         ; 106 / 529 ( 20 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 1,536 / 3,981,312 ( < 1 % )                 ;
@@ -154,14 +154,14 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
-;     Processor 3            ;   1.0%      ;
-;     Processor 4            ;   1.0%      ;
+;     Processor 2            ;   1.3%      ;
+;     Processor 3            ;   1.2%      ;
+;     Processor 4            ;   1.2%      ;
 +----------------------------+-------------+
 
 
@@ -170,7 +170,7 @@ agreement for further details.
 +----------+-------------------------------+
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
-; KEY[0]   ; Incomplete set of assignments ;
+; KEY[1]   ; Incomplete set of assignments ;
 ; KEY[2]   ; Incomplete set of assignments ;
 ; SW[4]    ; Incomplete set of assignments ;
 ; SW[5]    ; Incomplete set of assignments ;
@@ -178,7 +178,13 @@ agreement for further details.
 ; SW[7]    ; Incomplete set of assignments ;
 ; SW[8]    ; Incomplete set of assignments ;
 ; SW[9]    ; Incomplete set of assignments ;
-; SW[16]   ; Incomplete set of assignments ;
+; SW[10]   ; Incomplete set of assignments ;
+; SW[11]   ; Incomplete set of assignments ;
+; SW[12]   ; Incomplete set of assignments ;
+; SW[13]   ; Incomplete set of assignments ;
+; SW[14]   ; Incomplete set of assignments ;
+; SW[15]   ; Incomplete set of assignments ;
+; SW[17]   ; Incomplete set of assignments ;
 ; LEDR[0]  ; Incomplete set of assignments ;
 ; LEDR[1]  ; Incomplete set of assignments ;
 ; LEDR[2]  ; Incomplete set of assignments ;
@@ -266,16 +272,10 @@ agreement for further details.
 ; SW[3]    ; Incomplete set of assignments ;
 ; SW[0]    ; Incomplete set of assignments ;
 ; SW[1]    ; Incomplete set of assignments ;
-; CLOCK_50 ; Incomplete set of assignments ;
-; SW[11]   ; Incomplete set of assignments ;
-; SW[17]   ; Incomplete set of assignments ;
 ; KEY[3]   ; Incomplete set of assignments ;
-; KEY[1]   ; Incomplete set of assignments ;
-; SW[10]   ; Incomplete set of assignments ;
-; SW[13]   ; Incomplete set of assignments ;
-; SW[12]   ; Incomplete set of assignments ;
-; SW[15]   ; Incomplete set of assignments ;
-; SW[14]   ; Incomplete set of assignments ;
+; KEY[0]   ; Incomplete set of assignments ;
+; CLOCK_50 ; Incomplete set of assignments ;
+; SW[16]   ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -712,8 +712,8 @@ agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 4733 ) ; 0.00 % ( 0 / 4733 )        ; 0.00 % ( 0 / 4733 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 4733 ) ; 0.00 % ( 0 / 4733 )        ; 0.00 % ( 0 / 4733 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 4729 ) ; 0.00 % ( 0 / 4729 )        ; 0.00 % ( 0 / 4729 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 4729 ) ; 0.00 % ( 0 / 4729 )        ; 0.00 % ( 0 / 4729 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -736,7 +736,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 4723 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 4719 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -752,26 +752,26 @@ The pin-out file can be found in /home/raphacosta/mipssingle/output_files/mipssi
 +---------------------------------------------+------------------------------+
 ; Resource                                    ; Usage                        ;
 +---------------------------------------------+------------------------------+
-; Total logic elements                        ; 3,275 / 114,480 ( 3 % )      ;
-;     -- Combinational with no register       ; 1106                         ;
-;     -- Register only                        ; 998                          ;
-;     -- Combinational with a register        ; 1171                         ;
+; Total logic elements                        ; 3,233 / 114,480 ( 3 % )      ;
+;     -- Combinational with no register       ; 1063                         ;
+;     -- Register only                        ; 961                          ;
+;     -- Combinational with a register        ; 1209                         ;
 ;                                             ;                              ;
 ; Logic element usage by number of LUT inputs ;                              ;
-;     -- 4 input functions                    ; 1916                         ;
-;     -- 3 input functions                    ; 89                           ;
-;     -- <=2 input functions                  ; 272                          ;
-;     -- Register only                        ; 998                          ;
+;     -- 4 input functions                    ; 1905                         ;
+;     -- 3 input functions                    ; 94                           ;
+;     -- <=2 input functions                  ; 273                          ;
+;     -- Register only                        ; 961                          ;
 ;                                             ;                              ;
 ; Logic elements by mode                      ;                              ;
-;     -- normal mode                          ; 2220                         ;
+;     -- normal mode                          ; 2215                         ;
 ;     -- arithmetic mode                      ; 57                           ;
 ;                                             ;                              ;
-; Total registers*                            ; 2,169 / 117,053 ( 2 % )      ;
-;     -- Dedicated logic registers            ; 2,169 / 114,480 ( 2 % )      ;
+; Total registers*                            ; 2,170 / 117,053 ( 2 % )      ;
+;     -- Dedicated logic registers            ; 2,170 / 114,480 ( 2 % )      ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )            ;
 ;                                             ;                              ;
-; Total LABs:  partially or completely used   ; 248 / 7,155 ( 3 % )          ;
+; Total LABs:  partially or completely used   ; 230 / 7,155 ( 3 % )          ;
 ; Virtual pins                                ; 0                            ;
 ; I/O pins                                    ; 106 / 529 ( 20 % )           ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )               ;
@@ -789,11 +789,11 @@ The pin-out file can be found in /home/raphacosta/mipssingle/output_files/mipssi
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )                ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )                ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )                ;
-; Average interconnect usage (total/H/V)      ; 2.2% / 2.1% / 2.3%           ;
-; Peak interconnect usage (total/H/V)         ; 45.3% / 42.2% / 49.7%        ;
+; Average interconnect usage (total/H/V)      ; 2.0% / 2.0% / 2.1%           ;
+; Peak interconnect usage (total/H/V)         ; 52.2% / 50.4% / 54.7%        ;
 ; Maximum fan-out                             ; 2171                         ;
 ; Highest non-global fan-out                  ; 387                          ;
-; Total fan-out                               ; 16017                        ;
+; Total fan-out                               ; 15918                        ;
 ; Average fan-out                             ; 2.83                         ;
 +---------------------------------------------+------------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -807,26 +807,26 @@ The pin-out file can be found in /home/raphacosta/mipssingle/output_files/mipssi
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 3275 / 114480 ( 3 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 1106                  ; 0                              ;
-;     -- Register only                        ; 998                   ; 0                              ;
-;     -- Combinational with a register        ; 1171                  ; 0                              ;
+; Total logic elements                        ; 3233 / 114480 ( 3 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 1063                  ; 0                              ;
+;     -- Register only                        ; 961                   ; 0                              ;
+;     -- Combinational with a register        ; 1209                  ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 1916                  ; 0                              ;
-;     -- 3 input functions                    ; 89                    ; 0                              ;
-;     -- <=2 input functions                  ; 272                   ; 0                              ;
-;     -- Register only                        ; 998                   ; 0                              ;
+;     -- 4 input functions                    ; 1905                  ; 0                              ;
+;     -- 3 input functions                    ; 94                    ; 0                              ;
+;     -- <=2 input functions                  ; 273                   ; 0                              ;
+;     -- Register only                        ; 961                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 2220                  ; 0                              ;
+;     -- normal mode                          ; 2215                  ; 0                              ;
 ;     -- arithmetic mode                      ; 57                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 2169                  ; 0                              ;
-;     -- Dedicated logic registers            ; 2169 / 114480 ( 2 % ) ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 2170                  ; 0                              ;
+;     -- Dedicated logic registers            ; 2170 / 114480 ( 2 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 248 / 7155 ( 3 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 230 / 7155 ( 3 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 106                   ; 0                              ;
@@ -843,8 +843,8 @@ The pin-out file can be found in /home/raphacosta/mipssingle/output_files/mipssi
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 16016                 ; 5                              ;
-;     -- Registered Connections               ; 2345                  ; 0                              ;
+;     -- Total Connections                    ; 15917                 ; 5                              ;
+;     -- Registered Connections               ; 2346                  ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -876,21 +876,21 @@ The pin-out file can be found in /home/raphacosta/mipssingle/output_files/mipssi
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; CLOCK_50 ; Y2    ; 2        ; 0            ; 36           ; 14           ; 2171                  ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; KEY[0]   ; M23   ; 6        ; 115          ; 40           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; KEY[1]   ; M21   ; 6        ; 115          ; 53           ; 14           ; 30                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; CLOCK_50 ; Y2    ; 2        ; 0            ; 36           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; KEY[0]   ; M23   ; 6        ; 115          ; 40           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; KEY[1]   ; M21   ; 6        ; 115          ; 53           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; KEY[2]   ; N21   ; 6        ; 115          ; 42           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; KEY[3]   ; R24   ; 5        ; 115          ; 35           ; 21           ; 30                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[0]    ; AB28  ; 5        ; 115          ; 17           ; 0            ; 44                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[10]   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[11]   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[12]   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[13]   ; AA24  ; 5        ; 115          ; 9            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[14]   ; AA23  ; 5        ; 115          ; 10           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[15]   ; AA22  ; 5        ; 115          ; 6            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[16]   ; Y24   ; 5        ; 115          ; 13           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[17]   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 18                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[1]    ; AC28  ; 5        ; 115          ; 14           ; 0            ; 65                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[10]   ; AC24  ; 5        ; 115          ; 4            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[11]   ; AB24  ; 5        ; 115          ; 5            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[12]   ; AB23  ; 5        ; 115          ; 7            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[13]   ; AA24  ; 5        ; 115          ; 9            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[14]   ; AA23  ; 5        ; 115          ; 10           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[15]   ; AA22  ; 5        ; 115          ; 6            ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[16]   ; Y24   ; 5        ; 115          ; 13           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[17]   ; Y23   ; 5        ; 115          ; 14           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[1]    ; AC28  ; 5        ; 115          ; 14           ; 0            ; 64                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[2]    ; AC27  ; 5        ; 115          ; 15           ; 7            ; 36                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[3]    ; AD27  ; 5        ; 115          ; 13           ; 7            ; 57                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[4]    ; AB27  ; 5        ; 115          ; 18           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
@@ -1824,7 +1824,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                               ; Entity Name         ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |mipssingle                                  ; 3275 (166)  ; 2169 (0)                  ; 0 (0)         ; 1536        ; 2    ; 0            ; 0       ; 0         ; 106  ; 0            ; 1106 (166)   ; 998 (0)           ; 1171 (1)         ; |mipssingle                                                                                                       ; mipssingle          ; work         ;
+; |mipssingle                                  ; 3233 (162)  ; 2170 (0)                  ; 0 (0)         ; 1536        ; 2    ; 0            ; 0       ; 0         ; 106  ; 0            ; 1063 (162)   ; 961 (0)           ; 1209 (4)         ; |mipssingle                                                                                                       ; mipssingle          ; work         ;
 ;    |conversorHex7Seg:display0|               ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |mipssingle|conversorHex7Seg:display0                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display1|               ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |mipssingle|conversorHex7Seg:display1                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display2|               ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |mipssingle|conversorHex7Seg:display2                                                                             ; conversorHex7Seg    ; work         ;
@@ -1833,26 +1833,27 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |conversorHex7Seg:display5|               ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |mipssingle|conversorHex7Seg:display5                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display6|               ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |mipssingle|conversorHex7Seg:display6                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display7|               ; 19 (19)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 0 (0)            ; |mipssingle|conversorHex7Seg:display7                                                                             ; conversorHex7Seg    ; work         ;
-;    |memoriaAll:memoria|                      ; 2723 (2)    ; 2048 (0)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 667 (2)      ; 985 (0)           ; 1071 (0)         ; |mipssingle|memoriaAll:memoria                                                                                    ; memoriaAll          ; work         ;
-;       |memoriaDeDados:memoria64k|            ; 2721 (2721) ; 2048 (2048)               ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 665 (665)    ; 985 (985)         ; 1071 (1071)      ; |mipssingle|memoriaAll:memoria|memoriaDeDados:memoria64k                                                          ; memoriaDeDados      ; work         ;
-;    |mipsFd:mipsFd|                           ; 356 (2)     ; 121 (0)                   ; 0 (0)         ; 1536        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 202 (2)      ; 13 (0)            ; 141 (0)          ; |mipssingle|mipsFd:mipsFd                                                                                         ; mipsFd              ; work         ;
-;       |bancoRegistradores:bancoReg|          ; 127 (127)   ; 81 (81)                   ; 0 (0)         ; 1536        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (27)      ; 13 (13)           ; 87 (87)          ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg                                                             ; bancoRegistradores  ; work         ;
+;    |edgeDetector:edgeDetector|               ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |mipssingle|edgeDetector:edgeDetector                                                                             ; edgeDetector        ; work         ;
+;    |memoriaAll:memoria|                      ; 2686 (2)    ; 2048 (0)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 628 (2)      ; 953 (0)           ; 1105 (0)         ; |mipssingle|memoriaAll:memoria                                                                                    ; memoriaAll          ; work         ;
+;       |memoriaDeDados:memoria64k|            ; 2684 (2684) ; 2048 (2048)               ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 626 (626)    ; 953 (953)         ; 1105 (1105)      ; |mipssingle|memoriaAll:memoria|memoriaDeDados:memoria64k                                                          ; memoriaDeDados      ; work         ;
+;    |mipsFd:mipsFd|                           ; 349 (1)     ; 121 (0)                   ; 0 (0)         ; 1536        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 200 (1)      ; 8 (0)             ; 141 (0)          ; |mipssingle|mipsFd:mipsFd                                                                                         ; mipsFd              ; work         ;
+;       |bancoRegistradores:bancoReg|          ; 125 (125)   ; 81 (81)                   ; 0 (0)         ; 1536        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 8 (8)             ; 87 (87)          ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg                                                             ; bancoRegistradores  ; work         ;
 ;          |altsyncram:registrador_rtl_0|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_0                                ; altsyncram          ; work         ;
 ;             |altsyncram_mcc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_0|altsyncram_mcc1:auto_generated ; altsyncram_mcc1     ; work         ;
 ;          |altsyncram:registrador_rtl_1|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1                                ; altsyncram          ; work         ;
 ;             |altsyncram_mcc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1|altsyncram_mcc1:auto_generated ; altsyncram_mcc1     ; work         ;
-;       |memoriaDeInst:memoriaDeInst|          ; 24 (24)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 10 (10)          ; |mipssingle|mipsFd:mipsFd|memoriaDeInst:memoriaDeInst                                                             ; memoriaDeInst       ; work         ;
-;       |mux2:muxInst|                         ; 23 (23)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 18 (18)          ; |mipssingle|mipsFd:mipsFd|mux2:muxInst                                                                            ; mux2                ; work         ;
-;       |mux2:muxPc|                           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |mipssingle|mipsFd:mipsFd|mux2:muxPc                                                                              ; mux2                ; work         ;
+;       |memoriaDeInst:memoriaDeInst|          ; 23 (23)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 10 (10)          ; |mipssingle|mipsFd:mipsFd|memoriaDeInst:memoriaDeInst                                                             ; memoriaDeInst       ; work         ;
+;       |mux2:muxPc|                           ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 14 (14)          ; |mipssingle|mipsFd:mipsFd|mux2:muxPc                                                                              ; mux2                ; work         ;
 ;       |mux2:muxRtRd|                         ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 2 (2)            ; |mipssingle|mipsFd:mipsFd|mux2:muxRtRd                                                                            ; mux2                ; work         ;
-;       |mux2:muxUlaMem|                       ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 25 (25)          ; |mipssingle|mipsFd:mipsFd|mux2:muxUlaMem                                                                          ; mux2                ; work         ;
-;       |registradorGenerico:PC|               ; 32 (32)     ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 30 (30)          ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC                                                                  ; registradorGenerico ; work         ;
+;       |mux2:muxUlaMem|                       ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 23 (23)          ; |mipssingle|mipsFd:mipsFd|mux2:muxUlaMem                                                                          ; mux2                ; work         ;
+;       |registradorGenerico:PC|               ; 30 (30)     ; 30 (30)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 30 (30)          ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC                                                                  ; registradorGenerico ; work         ;
 ;       |somador:somadorBeq|                   ; 29 (29)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (29)      ; 0 (0)             ; 0 (0)            ; |mipssingle|mipsFd:mipsFd|somador:somadorBeq                                                                      ; somador             ; work         ;
 ;       |somador:somadorPc|                    ; 30 (30)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 0 (0)            ; |mipssingle|mipsFd:mipsFd|somador:somadorPc                                                                       ; somador             ; work         ;
-;       |ulaMips:ula|                          ; 108 (12)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 85 (12)      ; 0 (0)             ; 23 (0)           ; |mipssingle|mipsFd:mipsFd|ulaMips:ula                                                                             ; ulaMips             ; work         ;
-;          |mux2:Mux_B|                        ; 22 (22)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 11 (11)          ; |mipssingle|mipsFd:mipsFd|ulaMips:ula|mux2:Mux_B                                                                  ; mux2                ; work         ;
+;       |ulaMips:ula|                          ; 109 (13)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (13)      ; 0 (0)             ; 22 (0)           ; |mipssingle|mipsFd:mipsFd|ulaMips:ula                                                                             ; ulaMips             ; work         ;
+;          |mux2:Mux_B|                        ; 22 (22)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 10 (10)          ; |mipssingle|mipsFd:mipsFd|ulaMips:ula|mux2:Mux_B                                                                  ; mux2                ; work         ;
 ;          |ulinha:ULA|                        ; 74 (74)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 62 (62)      ; 0 (0)             ; 12 (12)          ; |mipssingle|mipsFd:mipsFd|ulaMips:ula|ulinha:ULA                                                                  ; ulinha              ; work         ;
 ;    |mipsUc:mipsUc|                           ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 3 (3)            ; |mipssingle|mipsUc:mipsUc                                                                                         ; mipsUc              ; work         ;
+;    |mux2:mux_clk|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |mipssingle|mux2:mux_clk                                                                                          ; mux2                ; work         ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1862,7 +1863,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 ; Name     ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
-; KEY[0]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; KEY[1]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; KEY[2]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[4]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[5]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
@@ -1870,7 +1871,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[7]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[8]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[9]    ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[16]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[10]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[11]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[12]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[13]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[14]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[15]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; SW[17]   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -1958,421 +1965,362 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[3]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[1]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; SW[11]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[17]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; KEY[3]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; KEY[1]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[10]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[13]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[12]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[15]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[14]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; KEY[0]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; CLOCK_50 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; SW[16]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+--------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                       ;
-+--------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                    ; Pad To Core Index ; Setting ;
-+--------------------------------------------------------+-------------------+---------+
-; KEY[0]                                                 ;                   ;         ;
-; KEY[2]                                                 ;                   ;         ;
-; SW[4]                                                  ;                   ;         ;
-; SW[5]                                                  ;                   ;         ;
-; SW[6]                                                  ;                   ;         ;
-; SW[7]                                                  ;                   ;         ;
-; SW[8]                                                  ;                   ;         ;
-; SW[9]                                                  ;                   ;         ;
-; SW[16]                                                 ;                   ;         ;
-; SW[2]                                                  ;                   ;         ;
-;      - Mux2~2                                          ; 0                 ; 6       ;
-;      - Mux2~3                                          ; 0                 ; 6       ;
-;      - Mux2~4                                          ; 0                 ; 6       ;
-;      - Mux26~2                                         ; 0                 ; 6       ;
-;      - Mux26~3                                         ; 0                 ; 6       ;
-;      - Mux15~0                                         ; 0                 ; 6       ;
-;      - Mux3~0                                          ; 0                 ; 6       ;
-;      - Mux3~1                                          ; 0                 ; 6       ;
-;      - Mux15~1                                         ; 0                 ; 6       ;
-;      - Mux15~2                                         ; 0                 ; 6       ;
-;      - Mux15~3                                         ; 0                 ; 6       ;
-;      - Mux15~5                                         ; 0                 ; 6       ;
-;      - Mux4~1                                          ; 0                 ; 6       ;
-;      - Mux4~2                                          ; 0                 ; 6       ;
-;      - Mux4~3                                          ; 0                 ; 6       ;
-;      - Mux11~3                                         ; 0                 ; 6       ;
-;      - Mux11~7                                         ; 0                 ; 6       ;
-;      - Mux2~7                                          ; 0                 ; 6       ;
-;      - Mux0~6                                          ; 0                 ; 6       ;
-;      - Mux6~6                                          ; 0                 ; 6       ;
-;      - Mux10~6                                         ; 0                 ; 6       ;
-;      - Mux8~6                                          ; 0                 ; 6       ;
-;      - Mux11~9                                         ; 0                 ; 6       ;
-;      - Mux14~6                                         ; 0                 ; 6       ;
-;      - Mux18~6                                         ; 0                 ; 6       ;
-;      - Mux16~6                                         ; 0                 ; 6       ;
-;      - Mux17~6                                         ; 0                 ; 6       ;
-;      - Mux22~6                                         ; 0                 ; 6       ;
-;      - Mux20~6                                         ; 0                 ; 6       ;
-;      - Mux26~8                                         ; 0                 ; 6       ;
-;      - Mux24~6                                         ; 0                 ; 6       ;
-;      - Mux25~6                                         ; 0                 ; 6       ;
-;      - Mux30~6                                         ; 0                 ; 6       ;
-;      - Mux31~6                                         ; 0                 ; 6       ;
-;      - Mux28~6                                         ; 0                 ; 6       ;
-;      - Mux3~4                                          ; 0                 ; 6       ;
-; SW[3]                                                  ;                   ;         ;
-;      - Mux2~5                                          ; 1                 ; 6       ;
-;      - Mux26~2                                         ; 1                 ; 6       ;
-;      - Mux26~3                                         ; 1                 ; 6       ;
-;      - Mux0~5                                          ; 1                 ; 6       ;
-;      - Mux3~0                                          ; 1                 ; 6       ;
-;      - Mux3~2                                          ; 1                 ; 6       ;
-;      - Mux15~2                                         ; 1                 ; 6       ;
-;      - Mux15~3                                         ; 1                 ; 6       ;
-;      - Mux15~4                                         ; 1                 ; 6       ;
-;      - Mux15~5                                         ; 1                 ; 6       ;
-;      - Mux6~5                                          ; 1                 ; 6       ;
-;      - Mux4~6                                          ; 1                 ; 6       ;
-;      - Mux5~3                                          ; 1                 ; 6       ;
-;      - Mux10~5                                         ; 1                 ; 6       ;
-;      - Mux8~5                                          ; 1                 ; 6       ;
-;      - Mux11~3                                         ; 1                 ; 6       ;
-;      - Mux9~3                                          ; 1                 ; 6       ;
-;      - Mux14~5                                         ; 1                 ; 6       ;
-;      - Mux12~3                                         ; 1                 ; 6       ;
-;      - Mux13~3                                         ; 1                 ; 6       ;
-;      - Mux18~5                                         ; 1                 ; 6       ;
-;      - Mux16~5                                         ; 1                 ; 6       ;
-;      - Mux17~5                                         ; 1                 ; 6       ;
-;      - Mux22~5                                         ; 1                 ; 6       ;
-;      - Mux20~5                                         ; 1                 ; 6       ;
-;      - Mux23~3                                         ; 1                 ; 6       ;
-;      - Mux21~3                                         ; 1                 ; 6       ;
-;      - Mux26~7                                         ; 1                 ; 6       ;
-;      - Mux24~5                                         ; 1                 ; 6       ;
-;      - Mux27~3                                         ; 1                 ; 6       ;
-;      - Mux25~5                                         ; 1                 ; 6       ;
-;      - Mux28~5                                         ; 1                 ; 6       ;
-;      - Mux31~5                                         ; 1                 ; 6       ;
-;      - conversorHex7Seg:display7|rascSaida7seg[0]~2    ; 1                 ; 6       ;
-;      - Mux30~5                                         ; 1                 ; 6       ;
-;      - Mux29~3                                         ; 1                 ; 6       ;
-;      - conversorHex7Seg:display7|rascSaida7seg[1]~10   ; 1                 ; 6       ;
-;      - conversorHex7Seg:display7|rascSaida7seg[0]~16   ; 1                 ; 6       ;
-;      - Mux2~7                                          ; 1                 ; 6       ;
-;      - Mux0~6                                          ; 1                 ; 6       ;
-;      - Mux6~6                                          ; 1                 ; 6       ;
-;      - Mux10~6                                         ; 1                 ; 6       ;
-;      - Mux8~6                                          ; 1                 ; 6       ;
-;      - Mux11~9                                         ; 1                 ; 6       ;
-;      - Mux14~6                                         ; 1                 ; 6       ;
-;      - Mux18~6                                         ; 1                 ; 6       ;
-;      - Mux16~6                                         ; 1                 ; 6       ;
-;      - Mux17~6                                         ; 1                 ; 6       ;
-;      - Mux22~6                                         ; 1                 ; 6       ;
-;      - Mux20~6                                         ; 1                 ; 6       ;
-;      - Mux26~8                                         ; 1                 ; 6       ;
-;      - Mux24~6                                         ; 1                 ; 6       ;
-;      - Mux25~6                                         ; 1                 ; 6       ;
-;      - Mux30~6                                         ; 1                 ; 6       ;
-;      - Mux31~6                                         ; 1                 ; 6       ;
-;      - Mux28~6                                         ; 1                 ; 6       ;
-;      - Mux3~4                                          ; 1                 ; 6       ;
-; SW[0]                                                  ;                   ;         ;
-;      - Mux2~2                                          ; 0                 ; 6       ;
-;      - Mux2~5                                          ; 0                 ; 6       ;
-;      - Mux0~2                                          ; 0                 ; 6       ;
-;      - Mux26~2                                         ; 0                 ; 6       ;
-;      - Mux26~3                                         ; 0                 ; 6       ;
-;      - Mux3~2                                          ; 0                 ; 6       ;
-;      - Mux15~1                                         ; 0                 ; 6       ;
-;      - Mux15~2                                         ; 0                 ; 6       ;
-;      - Mux15~3                                         ; 0                 ; 6       ;
-;      - Mux15~4                                         ; 0                 ; 6       ;
-;      - Mux15~5                                         ; 0                 ; 6       ;
-;      - Mux6~2                                          ; 0                 ; 6       ;
-;      - Mux4~0                                          ; 0                 ; 6       ;
-;      - Mux4~1                                          ; 0                 ; 6       ;
-;      - Mux4~2                                          ; 0                 ; 6       ;
-;      - Mux4~3                                          ; 0                 ; 6       ;
-;      - Mux5~0                                          ; 0                 ; 6       ;
-;      - Mux10~2                                         ; 0                 ; 6       ;
-;      - Mux8~2                                          ; 0                 ; 6       ;
-;      - Mux11~2                                         ; 0                 ; 6       ;
-;      - Mux11~4                                         ; 0                 ; 6       ;
-;      - Mux11~8                                         ; 0                 ; 6       ;
-;      - Mux9~0                                          ; 0                 ; 6       ;
-;      - Mux14~2                                         ; 0                 ; 6       ;
-;      - Mux12~0                                         ; 0                 ; 6       ;
-;      - Mux13~0                                         ; 0                 ; 6       ;
-;      - Mux18~2                                         ; 0                 ; 6       ;
-;      - Mux16~2                                         ; 0                 ; 6       ;
-;      - Mux17~2                                         ; 0                 ; 6       ;
-;      - Mux22~2                                         ; 0                 ; 6       ;
-;      - Mux20~2                                         ; 0                 ; 6       ;
-;      - Mux23~0                                         ; 0                 ; 6       ;
-;      - Mux21~0                                         ; 0                 ; 6       ;
-;      - Mux26~4                                         ; 0                 ; 6       ;
-;      - Mux24~2                                         ; 0                 ; 6       ;
-;      - Mux27~0                                         ; 0                 ; 6       ;
-;      - Mux25~2                                         ; 0                 ; 6       ;
-;      - Mux28~2                                         ; 0                 ; 6       ;
-;      - Mux31~2                                         ; 0                 ; 6       ;
-;      - Mux31~3                                         ; 0                 ; 6       ;
-;      - Mux30~2                                         ; 0                 ; 6       ;
-;      - Mux30~3                                         ; 0                 ; 6       ;
-;      - Mux29~0                                         ; 0                 ; 6       ;
-;      - Mux3~3                                          ; 0                 ; 6       ;
-; SW[1]                                                  ;                   ;         ;
-;      - Mux2~6                                          ; 0                 ; 6       ;
-;      - Mux0~2                                          ; 0                 ; 6       ;
-;      - Mux0~3                                          ; 0                 ; 6       ;
-;      - Mux26~2                                         ; 0                 ; 6       ;
-;      - Mux26~3                                         ; 0                 ; 6       ;
-;      - Mux15~0                                         ; 0                 ; 6       ;
-;      - Mux15~1                                         ; 0                 ; 6       ;
-;      - Mux15~2                                         ; 0                 ; 6       ;
-;      - Mux15~3                                         ; 0                 ; 6       ;
-;      - Mux15~4                                         ; 0                 ; 6       ;
-;      - Mux15~5                                         ; 0                 ; 6       ;
-;      - Mux6~2                                          ; 0                 ; 6       ;
-;      - Mux6~3                                          ; 0                 ; 6       ;
-;      - Mux4~1                                          ; 0                 ; 6       ;
-;      - Mux4~2                                          ; 0                 ; 6       ;
-;      - Mux4~3                                          ; 0                 ; 6       ;
-;      - Mux10~2                                         ; 0                 ; 6       ;
-;      - Mux10~3                                         ; 0                 ; 6       ;
-;      - Mux8~2                                          ; 0                 ; 6       ;
-;      - Mux8~3                                          ; 0                 ; 6       ;
-;      - Mux11~4                                         ; 0                 ; 6       ;
-;      - Mux11~5                                         ; 0                 ; 6       ;
-;      - Mux11~6                                         ; 0                 ; 6       ;
-;      - Mux11~7                                         ; 0                 ; 6       ;
-;      - Mux14~2                                         ; 0                 ; 6       ;
-;      - Mux14~3                                         ; 0                 ; 6       ;
-;      - Mux18~2                                         ; 0                 ; 6       ;
-;      - Mux18~3                                         ; 0                 ; 6       ;
-;      - Mux16~2                                         ; 0                 ; 6       ;
-;      - Mux16~3                                         ; 0                 ; 6       ;
-;      - Mux17~2                                         ; 0                 ; 6       ;
-;      - Mux17~3                                         ; 0                 ; 6       ;
-;      - Mux22~2                                         ; 0                 ; 6       ;
-;      - Mux22~3                                         ; 0                 ; 6       ;
-;      - Mux20~2                                         ; 0                 ; 6       ;
-;      - Mux20~3                                         ; 0                 ; 6       ;
-;      - Mux26~4                                         ; 0                 ; 6       ;
-;      - Mux26~5                                         ; 0                 ; 6       ;
-;      - Mux24~2                                         ; 0                 ; 6       ;
-;      - Mux24~3                                         ; 0                 ; 6       ;
-;      - Mux25~2                                         ; 0                 ; 6       ;
-;      - Mux25~3                                         ; 0                 ; 6       ;
-;      - Mux28~2                                         ; 0                 ; 6       ;
-;      - Mux28~3                                         ; 0                 ; 6       ;
-;      - Mux31~2                                         ; 0                 ; 6       ;
-;      - Mux30~2                                         ; 0                 ; 6       ;
-;      - Mux2~7                                          ; 0                 ; 6       ;
-;      - Mux0~6                                          ; 0                 ; 6       ;
-;      - Mux6~6                                          ; 0                 ; 6       ;
-;      - Mux10~6                                         ; 0                 ; 6       ;
-;      - Mux8~6                                          ; 0                 ; 6       ;
-;      - Mux11~9                                         ; 0                 ; 6       ;
-;      - Mux14~6                                         ; 0                 ; 6       ;
-;      - Mux18~6                                         ; 0                 ; 6       ;
-;      - Mux16~6                                         ; 0                 ; 6       ;
-;      - Mux17~6                                         ; 0                 ; 6       ;
-;      - Mux22~6                                         ; 0                 ; 6       ;
-;      - Mux20~6                                         ; 0                 ; 6       ;
-;      - Mux26~8                                         ; 0                 ; 6       ;
-;      - Mux24~6                                         ; 0                 ; 6       ;
-;      - Mux25~6                                         ; 0                 ; 6       ;
-;      - Mux30~6                                         ; 0                 ; 6       ;
-;      - Mux31~6                                         ; 0                 ; 6       ;
-;      - Mux28~6                                         ; 0                 ; 6       ;
-;      - Mux3~3                                          ; 0                 ; 6       ;
-; CLOCK_50                                               ;                   ;         ;
-; SW[11]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|mux2:muxInst|Q[3]~1               ; 0                 ; 6       ;
-; SW[17]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[2]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[28]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[29]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[30]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[31]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[11]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[14]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[15]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[13]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[18]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[19]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[20]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[21]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[23]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[25]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[27]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[7]~11 ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[7]~12 ; 0                 ; 6       ;
-; KEY[3]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[3]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[4]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[5]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[6]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[7]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[8]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[9]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[10]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[12]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[16]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[17]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[22]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[24]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[26]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[2]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[28]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[29]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[30]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[31]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[11]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[14]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[15]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[13]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[18]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[19]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[20]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[21]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[23]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[25]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[27]   ; 0                 ; 6       ;
-; KEY[1]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[26]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[24]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[22]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[17]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[16]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[12]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[10]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[9]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[8]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[7]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[6]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[5]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[4]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[3]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[2]    ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[28]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[29]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[30]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[31]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[11]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[14]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[15]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[13]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[18]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[19]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[20]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[21]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[23]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[25]   ; 0                 ; 6       ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[27]   ; 0                 ; 6       ;
-; SW[10]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[2]    ; 0                 ; 6       ;
-; SW[13]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|mux2:muxInst|Q[5]~3               ; 0                 ; 6       ;
-; SW[12]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|mux2:muxInst|Q[4]~5               ; 0                 ; 6       ;
-; SW[15]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|mux2:muxInst|Q[7]~7               ; 0                 ; 6       ;
-; SW[14]                                                 ;                   ;         ;
-;      - mipsFd:mipsFd|mux2:muxInst|Q[6]~9               ; 0                 ; 6       ;
-+--------------------------------------------------------+-------------------+---------+
++------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                     ;
++------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                  ; Pad To Core Index ; Setting ;
++------------------------------------------------------+-------------------+---------+
+; KEY[1]                                               ;                   ;         ;
+; KEY[2]                                               ;                   ;         ;
+; SW[4]                                                ;                   ;         ;
+; SW[5]                                                ;                   ;         ;
+; SW[6]                                                ;                   ;         ;
+; SW[7]                                                ;                   ;         ;
+; SW[8]                                                ;                   ;         ;
+; SW[9]                                                ;                   ;         ;
+; SW[10]                                               ;                   ;         ;
+; SW[11]                                               ;                   ;         ;
+; SW[12]                                               ;                   ;         ;
+; SW[13]                                               ;                   ;         ;
+; SW[14]                                               ;                   ;         ;
+; SW[15]                                               ;                   ;         ;
+; SW[17]                                               ;                   ;         ;
+; SW[2]                                                ;                   ;         ;
+;      - Mux2~2                                        ; 0                 ; 6       ;
+;      - Mux2~3                                        ; 0                 ; 6       ;
+;      - Mux2~4                                        ; 0                 ; 6       ;
+;      - Mux26~2                                       ; 0                 ; 6       ;
+;      - Mux26~3                                       ; 0                 ; 6       ;
+;      - Mux15~0                                       ; 0                 ; 6       ;
+;      - Mux3~0                                        ; 0                 ; 6       ;
+;      - Mux3~1                                        ; 0                 ; 6       ;
+;      - Mux15~1                                       ; 0                 ; 6       ;
+;      - Mux15~2                                       ; 0                 ; 6       ;
+;      - Mux15~3                                       ; 0                 ; 6       ;
+;      - Mux15~5                                       ; 0                 ; 6       ;
+;      - Mux4~1                                        ; 0                 ; 6       ;
+;      - Mux4~2                                        ; 0                 ; 6       ;
+;      - Mux4~3                                        ; 0                 ; 6       ;
+;      - Mux11~3                                       ; 0                 ; 6       ;
+;      - Mux11~6                                       ; 0                 ; 6       ;
+;      - Mux2~7                                        ; 0                 ; 6       ;
+;      - Mux0~6                                        ; 0                 ; 6       ;
+;      - Mux6~6                                        ; 0                 ; 6       ;
+;      - Mux10~6                                       ; 0                 ; 6       ;
+;      - Mux8~6                                        ; 0                 ; 6       ;
+;      - Mux11~8                                       ; 0                 ; 6       ;
+;      - Mux14~6                                       ; 0                 ; 6       ;
+;      - Mux18~6                                       ; 0                 ; 6       ;
+;      - Mux16~6                                       ; 0                 ; 6       ;
+;      - Mux17~6                                       ; 0                 ; 6       ;
+;      - Mux22~6                                       ; 0                 ; 6       ;
+;      - Mux20~6                                       ; 0                 ; 6       ;
+;      - Mux26~8                                       ; 0                 ; 6       ;
+;      - Mux24~6                                       ; 0                 ; 6       ;
+;      - Mux25~6                                       ; 0                 ; 6       ;
+;      - Mux30~6                                       ; 0                 ; 6       ;
+;      - Mux31~6                                       ; 0                 ; 6       ;
+;      - Mux28~6                                       ; 0                 ; 6       ;
+;      - Mux3~4                                        ; 0                 ; 6       ;
+; SW[3]                                                ;                   ;         ;
+;      - Mux2~5                                        ; 1                 ; 6       ;
+;      - Mux26~2                                       ; 1                 ; 6       ;
+;      - Mux26~3                                       ; 1                 ; 6       ;
+;      - Mux0~5                                        ; 1                 ; 6       ;
+;      - Mux3~0                                        ; 1                 ; 6       ;
+;      - Mux3~2                                        ; 1                 ; 6       ;
+;      - Mux15~2                                       ; 1                 ; 6       ;
+;      - Mux15~3                                       ; 1                 ; 6       ;
+;      - Mux15~4                                       ; 1                 ; 6       ;
+;      - Mux15~5                                       ; 1                 ; 6       ;
+;      - Mux6~5                                        ; 1                 ; 6       ;
+;      - Mux4~6                                        ; 1                 ; 6       ;
+;      - Mux5~3                                        ; 1                 ; 6       ;
+;      - Mux10~5                                       ; 1                 ; 6       ;
+;      - Mux8~5                                        ; 1                 ; 6       ;
+;      - Mux11~3                                       ; 1                 ; 6       ;
+;      - Mux9~3                                        ; 1                 ; 6       ;
+;      - Mux14~5                                       ; 1                 ; 6       ;
+;      - Mux12~3                                       ; 1                 ; 6       ;
+;      - Mux13~3                                       ; 1                 ; 6       ;
+;      - Mux18~5                                       ; 1                 ; 6       ;
+;      - Mux16~5                                       ; 1                 ; 6       ;
+;      - Mux17~5                                       ; 1                 ; 6       ;
+;      - Mux22~5                                       ; 1                 ; 6       ;
+;      - Mux20~5                                       ; 1                 ; 6       ;
+;      - Mux23~3                                       ; 1                 ; 6       ;
+;      - Mux21~3                                       ; 1                 ; 6       ;
+;      - Mux26~7                                       ; 1                 ; 6       ;
+;      - Mux24~5                                       ; 1                 ; 6       ;
+;      - Mux27~3                                       ; 1                 ; 6       ;
+;      - Mux25~5                                       ; 1                 ; 6       ;
+;      - Mux28~5                                       ; 1                 ; 6       ;
+;      - Mux31~5                                       ; 1                 ; 6       ;
+;      - conversorHex7Seg:display7|rascSaida7seg[0]~2  ; 1                 ; 6       ;
+;      - Mux30~5                                       ; 1                 ; 6       ;
+;      - Mux29~3                                       ; 1                 ; 6       ;
+;      - conversorHex7Seg:display7|rascSaida7seg[1]~10 ; 1                 ; 6       ;
+;      - conversorHex7Seg:display7|rascSaida7seg[0]~16 ; 1                 ; 6       ;
+;      - Mux2~7                                        ; 1                 ; 6       ;
+;      - Mux0~6                                        ; 1                 ; 6       ;
+;      - Mux6~6                                        ; 1                 ; 6       ;
+;      - Mux10~6                                       ; 1                 ; 6       ;
+;      - Mux8~6                                        ; 1                 ; 6       ;
+;      - Mux11~8                                       ; 1                 ; 6       ;
+;      - Mux14~6                                       ; 1                 ; 6       ;
+;      - Mux18~6                                       ; 1                 ; 6       ;
+;      - Mux16~6                                       ; 1                 ; 6       ;
+;      - Mux17~6                                       ; 1                 ; 6       ;
+;      - Mux22~6                                       ; 1                 ; 6       ;
+;      - Mux20~6                                       ; 1                 ; 6       ;
+;      - Mux26~8                                       ; 1                 ; 6       ;
+;      - Mux24~6                                       ; 1                 ; 6       ;
+;      - Mux25~6                                       ; 1                 ; 6       ;
+;      - Mux30~6                                       ; 1                 ; 6       ;
+;      - Mux31~6                                       ; 1                 ; 6       ;
+;      - Mux28~6                                       ; 1                 ; 6       ;
+;      - Mux3~4                                        ; 1                 ; 6       ;
+; SW[0]                                                ;                   ;         ;
+;      - Mux2~2                                        ; 0                 ; 6       ;
+;      - Mux2~5                                        ; 0                 ; 6       ;
+;      - Mux0~2                                        ; 0                 ; 6       ;
+;      - Mux26~2                                       ; 0                 ; 6       ;
+;      - Mux26~3                                       ; 0                 ; 6       ;
+;      - Mux3~2                                        ; 0                 ; 6       ;
+;      - Mux15~1                                       ; 0                 ; 6       ;
+;      - Mux15~2                                       ; 0                 ; 6       ;
+;      - Mux15~3                                       ; 0                 ; 6       ;
+;      - Mux15~4                                       ; 0                 ; 6       ;
+;      - Mux15~5                                       ; 0                 ; 6       ;
+;      - Mux6~2                                        ; 0                 ; 6       ;
+;      - Mux4~0                                        ; 0                 ; 6       ;
+;      - Mux4~1                                        ; 0                 ; 6       ;
+;      - Mux4~2                                        ; 0                 ; 6       ;
+;      - Mux4~3                                        ; 0                 ; 6       ;
+;      - Mux5~0                                        ; 0                 ; 6       ;
+;      - Mux10~2                                       ; 0                 ; 6       ;
+;      - Mux8~2                                        ; 0                 ; 6       ;
+;      - Mux11~2                                       ; 0                 ; 6       ;
+;      - Mux11~4                                       ; 0                 ; 6       ;
+;      - Mux11~7                                       ; 0                 ; 6       ;
+;      - Mux9~0                                        ; 0                 ; 6       ;
+;      - Mux14~2                                       ; 0                 ; 6       ;
+;      - Mux12~0                                       ; 0                 ; 6       ;
+;      - Mux13~0                                       ; 0                 ; 6       ;
+;      - Mux18~2                                       ; 0                 ; 6       ;
+;      - Mux16~2                                       ; 0                 ; 6       ;
+;      - Mux17~2                                       ; 0                 ; 6       ;
+;      - Mux22~2                                       ; 0                 ; 6       ;
+;      - Mux20~2                                       ; 0                 ; 6       ;
+;      - Mux23~0                                       ; 0                 ; 6       ;
+;      - Mux21~0                                       ; 0                 ; 6       ;
+;      - Mux26~4                                       ; 0                 ; 6       ;
+;      - Mux24~2                                       ; 0                 ; 6       ;
+;      - Mux27~0                                       ; 0                 ; 6       ;
+;      - Mux25~2                                       ; 0                 ; 6       ;
+;      - Mux28~2                                       ; 0                 ; 6       ;
+;      - Mux31~2                                       ; 0                 ; 6       ;
+;      - Mux31~3                                       ; 0                 ; 6       ;
+;      - Mux30~2                                       ; 0                 ; 6       ;
+;      - Mux30~3                                       ; 0                 ; 6       ;
+;      - Mux29~0                                       ; 0                 ; 6       ;
+;      - Mux3~3                                        ; 0                 ; 6       ;
+; SW[1]                                                ;                   ;         ;
+;      - Mux2~6                                        ; 0                 ; 6       ;
+;      - Mux0~2                                        ; 0                 ; 6       ;
+;      - Mux0~3                                        ; 0                 ; 6       ;
+;      - Mux26~2                                       ; 0                 ; 6       ;
+;      - Mux26~3                                       ; 0                 ; 6       ;
+;      - Mux15~0                                       ; 0                 ; 6       ;
+;      - Mux15~1                                       ; 0                 ; 6       ;
+;      - Mux15~2                                       ; 0                 ; 6       ;
+;      - Mux15~3                                       ; 0                 ; 6       ;
+;      - Mux15~4                                       ; 0                 ; 6       ;
+;      - Mux15~5                                       ; 0                 ; 6       ;
+;      - Mux6~2                                        ; 0                 ; 6       ;
+;      - Mux6~3                                        ; 0                 ; 6       ;
+;      - Mux4~1                                        ; 0                 ; 6       ;
+;      - Mux4~2                                        ; 0                 ; 6       ;
+;      - Mux4~3                                        ; 0                 ; 6       ;
+;      - Mux10~2                                       ; 0                 ; 6       ;
+;      - Mux10~3                                       ; 0                 ; 6       ;
+;      - Mux8~2                                        ; 0                 ; 6       ;
+;      - Mux8~3                                        ; 0                 ; 6       ;
+;      - Mux11~4                                       ; 0                 ; 6       ;
+;      - Mux11~5                                       ; 0                 ; 6       ;
+;      - Mux11~6                                       ; 0                 ; 6       ;
+;      - Mux14~2                                       ; 0                 ; 6       ;
+;      - Mux14~3                                       ; 0                 ; 6       ;
+;      - Mux18~2                                       ; 0                 ; 6       ;
+;      - Mux18~3                                       ; 0                 ; 6       ;
+;      - Mux16~2                                       ; 0                 ; 6       ;
+;      - Mux16~3                                       ; 0                 ; 6       ;
+;      - Mux17~2                                       ; 0                 ; 6       ;
+;      - Mux17~3                                       ; 0                 ; 6       ;
+;      - Mux22~2                                       ; 0                 ; 6       ;
+;      - Mux22~3                                       ; 0                 ; 6       ;
+;      - Mux20~2                                       ; 0                 ; 6       ;
+;      - Mux20~3                                       ; 0                 ; 6       ;
+;      - Mux26~4                                       ; 0                 ; 6       ;
+;      - Mux26~5                                       ; 0                 ; 6       ;
+;      - Mux24~2                                       ; 0                 ; 6       ;
+;      - Mux24~3                                       ; 0                 ; 6       ;
+;      - Mux25~2                                       ; 0                 ; 6       ;
+;      - Mux25~3                                       ; 0                 ; 6       ;
+;      - Mux28~2                                       ; 0                 ; 6       ;
+;      - Mux28~3                                       ; 0                 ; 6       ;
+;      - Mux31~2                                       ; 0                 ; 6       ;
+;      - Mux30~2                                       ; 0                 ; 6       ;
+;      - Mux2~7                                        ; 0                 ; 6       ;
+;      - Mux0~6                                        ; 0                 ; 6       ;
+;      - Mux6~6                                        ; 0                 ; 6       ;
+;      - Mux10~6                                       ; 0                 ; 6       ;
+;      - Mux8~6                                        ; 0                 ; 6       ;
+;      - Mux11~8                                       ; 0                 ; 6       ;
+;      - Mux14~6                                       ; 0                 ; 6       ;
+;      - Mux18~6                                       ; 0                 ; 6       ;
+;      - Mux16~6                                       ; 0                 ; 6       ;
+;      - Mux17~6                                       ; 0                 ; 6       ;
+;      - Mux22~6                                       ; 0                 ; 6       ;
+;      - Mux20~6                                       ; 0                 ; 6       ;
+;      - Mux26~8                                       ; 0                 ; 6       ;
+;      - Mux24~6                                       ; 0                 ; 6       ;
+;      - Mux25~6                                       ; 0                 ; 6       ;
+;      - Mux30~6                                       ; 0                 ; 6       ;
+;      - Mux31~6                                       ; 0                 ; 6       ;
+;      - Mux28~6                                       ; 0                 ; 6       ;
+;      - Mux3~3                                        ; 0                 ; 6       ;
+; KEY[3]                                               ;                   ;         ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[2]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[8]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[9]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[10] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[12] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[16] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[17] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[22] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[24] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[26] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[28] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[29] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[30] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[31] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[3]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[4]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[6]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[7]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[5]  ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[11] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[14] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[15] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[13] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[18] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[19] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[20] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[21] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[23] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[25] ; 0                 ; 6       ;
+;      - mipsFd:mipsFd|registradorGenerico:PC|DOUT[27] ; 0                 ; 6       ;
+; KEY[0]                                               ;                   ;         ;
+;      - edgeDetector:edgeDetector|saida               ; 1                 ; 6       ;
+;      - edgeDetector:edgeDetector|saidaQ~0            ; 1                 ; 6       ;
+; CLOCK_50                                             ;                   ;         ;
+; SW[16]                                               ;                   ;         ;
+;      - mux2:mux_clk|Q[0]                             ; 0                 ; 6       ;
++------------------------------------------------------+-------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                   ;
-+-----------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                                      ; Location           ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                                                  ; PIN_Y2             ; 2171    ; Clock                   ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; KEY[1]                                                    ; PIN_M21            ; 30      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; KEY[3]                                                    ; PIN_R24            ; 30      ; Async. clear            ; no     ; --                   ; --               ; --                        ;
-; SW[17]                                                    ; PIN_Y23            ; 18      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3433 ; LCCOMB_X68_Y33_N22 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3436 ; LCCOMB_X66_Y31_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3439 ; LCCOMB_X69_Y31_N18 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3442 ; LCCOMB_X65_Y33_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3445 ; LCCOMB_X70_Y34_N2  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3448 ; LCCOMB_X74_Y36_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3451 ; LCCOMB_X74_Y35_N18 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3454 ; LCCOMB_X75_Y35_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3457 ; LCCOMB_X56_Y35_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3460 ; LCCOMB_X58_Y35_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3463 ; LCCOMB_X60_Y35_N2  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3466 ; LCCOMB_X62_Y38_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3469 ; LCCOMB_X70_Y37_N2  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3472 ; LCCOMB_X73_Y29_N6  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3475 ; LCCOMB_X73_Y31_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3478 ; LCCOMB_X70_Y39_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3480 ; LCCOMB_X65_Y31_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3482 ; LCCOMB_X66_Y29_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3484 ; LCCOMB_X65_Y29_N6  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3486 ; LCCOMB_X66_Y34_N6  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3488 ; LCCOMB_X67_Y33_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3490 ; LCCOMB_X70_Y35_N28 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3492 ; LCCOMB_X68_Y34_N6  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3494 ; LCCOMB_X70_Y31_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3496 ; LCCOMB_X65_Y32_N18 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3498 ; LCCOMB_X62_Y31_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3500 ; LCCOMB_X62_Y33_N18 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3502 ; LCCOMB_X63_Y33_N18 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3504 ; LCCOMB_X59_Y35_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3506 ; LCCOMB_X63_Y38_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3508 ; LCCOMB_X59_Y34_N6  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3510 ; LCCOMB_X66_Y37_N2  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3512 ; LCCOMB_X72_Y35_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3514 ; LCCOMB_X74_Y39_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3516 ; LCCOMB_X70_Y38_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3518 ; LCCOMB_X70_Y35_N6  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3520 ; LCCOMB_X70_Y32_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3522 ; LCCOMB_X65_Y28_N2  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3524 ; LCCOMB_X66_Y32_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3526 ; LCCOMB_X67_Y32_N16 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3528 ; LCCOMB_X67_Y32_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3530 ; LCCOMB_X69_Y32_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3532 ; LCCOMB_X62_Y32_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3534 ; LCCOMB_X66_Y33_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3536 ; LCCOMB_X67_Y38_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3538 ; LCCOMB_X62_Y37_N2  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3540 ; LCCOMB_X62_Y39_N18 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3542 ; LCCOMB_X67_Y39_N6  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3544 ; LCCOMB_X73_Y35_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3546 ; LCCOMB_X77_Y35_N22 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3548 ; LCCOMB_X76_Y35_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3550 ; LCCOMB_X66_Y38_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3552 ; LCCOMB_X66_Y27_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3554 ; LCCOMB_X67_Y31_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3556 ; LCCOMB_X63_Y31_N2  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3558 ; LCCOMB_X65_Y27_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3560 ; LCCOMB_X57_Y35_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3562 ; LCCOMB_X62_Y36_N18 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3564 ; LCCOMB_X62_Y34_N14 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3566 ; LCCOMB_X65_Y37_N0  ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3568 ; LCCOMB_X67_Y37_N10 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3570 ; LCCOMB_X65_Y37_N26 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3572 ; LCCOMB_X66_Y39_N22 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3574 ; LCCOMB_X65_Y36_N30 ; 32      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; mipsUc:mipsUc|Mux0~0                                      ; LCCOMB_X68_Y32_N22 ; 19      ; Sync. load              ; no     ; --                   ; --               ; --                        ;
-; mipsUc:mipsUc|Mux2~0                                      ; LCCOMB_X63_Y37_N0  ; 4       ; Write enable            ; no     ; --                   ; --               ; --                        ;
-+-----------------------------------------------------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                        ;
++-----------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                      ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-----------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                                                  ; PIN_Y2             ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; KEY[3]                                                    ; PIN_R24            ; 30      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3433 ; LCCOMB_X54_Y40_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3436 ; LCCOMB_X60_Y38_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3439 ; LCCOMB_X53_Y40_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3442 ; LCCOMB_X52_Y40_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3445 ; LCCOMB_X60_Y39_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3448 ; LCCOMB_X60_Y44_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3451 ; LCCOMB_X60_Y46_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3454 ; LCCOMB_X60_Y41_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3457 ; LCCOMB_X58_Y44_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3460 ; LCCOMB_X60_Y43_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3463 ; LCCOMB_X61_Y44_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3466 ; LCCOMB_X57_Y44_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3469 ; LCCOMB_X58_Y43_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3472 ; LCCOMB_X60_Y36_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3475 ; LCCOMB_X57_Y39_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3478 ; LCCOMB_X58_Y39_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3480 ; LCCOMB_X62_Y35_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3482 ; LCCOMB_X68_Y40_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3484 ; LCCOMB_X65_Y36_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3486 ; LCCOMB_X62_Y36_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3488 ; LCCOMB_X65_Y44_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3490 ; LCCOMB_X70_Y40_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3492 ; LCCOMB_X73_Y40_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3494 ; LCCOMB_X61_Y39_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3496 ; LCCOMB_X65_Y43_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3498 ; LCCOMB_X68_Y42_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3500 ; LCCOMB_X69_Y42_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3502 ; LCCOMB_X65_Y42_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3504 ; LCCOMB_X62_Y39_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3506 ; LCCOMB_X69_Y38_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3508 ; LCCOMB_X61_Y40_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3510 ; LCCOMB_X65_Y39_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3512 ; LCCOMB_X62_Y37_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3514 ; LCCOMB_X62_Y44_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3516 ; LCCOMB_X69_Y44_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3518 ; LCCOMB_X69_Y40_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3520 ; LCCOMB_X60_Y34_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3522 ; LCCOMB_X58_Y37_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3524 ; LCCOMB_X60_Y37_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3526 ; LCCOMB_X61_Y39_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3528 ; LCCOMB_X61_Y41_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3530 ; LCCOMB_X62_Y42_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3532 ; LCCOMB_X65_Y41_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3534 ; LCCOMB_X61_Y42_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3536 ; LCCOMB_X61_Y40_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3538 ; LCCOMB_X61_Y40_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3540 ; LCCOMB_X57_Y41_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3542 ; LCCOMB_X62_Y41_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3544 ; LCCOMB_X62_Y41_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3546 ; LCCOMB_X62_Y43_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3548 ; LCCOMB_X62_Y46_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3550 ; LCCOMB_X61_Y40_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3552 ; LCCOMB_X57_Y38_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3554 ; LCCOMB_X59_Y40_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3556 ; LCCOMB_X58_Y40_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3558 ; LCCOMB_X57_Y40_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3560 ; LCCOMB_X61_Y43_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3562 ; LCCOMB_X57_Y37_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3564 ; LCCOMB_X55_Y40_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3566 ; LCCOMB_X56_Y40_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3568 ; LCCOMB_X61_Y36_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3570 ; LCCOMB_X56_Y40_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3572 ; LCCOMB_X60_Y42_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaAll:memoria|memoriaDeDados:memoria64k|content~3574 ; LCCOMB_X61_Y40_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; mipsUc:mipsUc|Mux0~0                                      ; LCCOMB_X65_Y35_N28 ; 31      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; mipsUc:mipsUc|Mux2~0                                      ; LCCOMB_X65_Y35_N12 ; 4       ; Write enable ; no     ; --                   ; --               ; --                        ;
+; mux2:mux_clk|Q[0]                                         ; LCCOMB_X1_Y36_N14  ; 2171    ; Clock        ; yes    ; Global Clock         ; GCLK0            ; --                        ;
++-----------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                ;
-+----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name     ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK_50 ; PIN_Y2   ; 2171    ; 1142                                 ; Global Clock         ; GCLK4            ; --                        ;
-+----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                  ;
++-------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name              ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; mux2:mux_clk|Q[0] ; LCCOMB_X1_Y36_N14 ; 2171    ; 2038                                 ; Global Clock         ; GCLK0            ; --                        ;
++-------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2380,8 +2328,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Name                                                                                                             ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
 +------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_0|altsyncram_mcc1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1    ; None ; M9K_X64_Y35_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1|altsyncram_mcc1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 16                          ; 32                          ; 16                          ; 32                          ; 512                 ; 1    ; None ; M9K_X64_Y36_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_0|altsyncram_mcc1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1    ; None ; M9K_X64_Y40_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1|altsyncram_mcc1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 16                          ; 32                          ; 16                          ; 32                          ; 512                 ; 1    ; None ; M9K_X64_Y38_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 +------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -2391,177 +2339,174 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 6,291 / 342,891 ( 2 % ) ;
-; C16 interconnects     ; 223 / 10,120 ( 2 % )    ;
-; C4 interconnects      ; 4,495 / 209,544 ( 2 % ) ;
-; Direct links          ; 280 / 342,891 ( < 1 % ) ;
+; Block interconnects   ; 6,158 / 342,891 ( 2 % ) ;
+; C16 interconnects     ; 189 / 10,120 ( 2 % )    ;
+; C4 interconnects      ; 4,269 / 209,544 ( 2 % ) ;
+; Direct links          ; 310 / 342,891 ( < 1 % ) ;
 ; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 953 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 271 / 9,963 ( 3 % )     ;
-; R4 interconnects      ; 5,536 / 289,782 ( 2 % ) ;
+; Local interconnects   ; 940 / 119,088 ( < 1 % ) ;
+; R24 interconnects     ; 256 / 9,963 ( 3 % )     ;
+; R4 interconnects      ; 5,011 / 289,782 ( 2 % ) ;
 +-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.21) ; Number of LABs  (Total = 248) ;
+; Number of Logic Elements  (Average = 14.06) ; Number of LABs  (Total = 230) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 15                            ;
-; 2                                           ; 5                             ;
-; 3                                           ; 1                             ;
-; 4                                           ; 5                             ;
-; 5                                           ; 3                             ;
-; 6                                           ; 6                             ;
-; 7                                           ; 8                             ;
+; 1                                           ; 10                            ;
+; 2                                           ; 2                             ;
+; 3                                           ; 3                             ;
+; 4                                           ; 0                             ;
+; 5                                           ; 4                             ;
+; 6                                           ; 0                             ;
+; 7                                           ; 1                             ;
 ; 8                                           ; 2                             ;
-; 9                                           ; 4                             ;
-; 10                                          ; 1                             ;
-; 11                                          ; 2                             ;
-; 12                                          ; 7                             ;
-; 13                                          ; 8                             ;
-; 14                                          ; 14                            ;
+; 9                                           ; 6                             ;
+; 10                                          ; 3                             ;
+; 11                                          ; 3                             ;
+; 12                                          ; 2                             ;
+; 13                                          ; 12                            ;
+; 14                                          ; 11                            ;
 ; 15                                          ; 20                            ;
-; 16                                          ; 147                           ;
+; 16                                          ; 151                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.62) ; Number of LABs  (Total = 248) ;
+; LAB-wide Signals  (Average = 1.55) ; Number of LABs  (Total = 230) ;
 +------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 6                             ;
-; 1 Clock                            ; 222                           ;
-; 1 Clock enable                     ; 56                            ;
-; 1 Sync. clear                      ; 4                             ;
-; 1 Sync. load                       ; 4                             ;
-; 2 Clock enables                    ; 111                           ;
+; 1 Async. clear                     ; 5                             ;
+; 1 Clock                            ; 205                           ;
+; 1 Clock enable                     ; 34                            ;
+; 1 Sync. load                       ; 3                             ;
+; 2 Clock enables                    ; 110                           ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 21.94) ; Number of LABs  (Total = 248) ;
+; Number of Signals Sourced  (Average = 23.48) ; Number of LABs  (Total = 230) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 9                             ;
-; 2                                            ; 8                             ;
+; 1                                            ; 7                             ;
+; 2                                            ; 3                             ;
 ; 3                                            ; 0                             ;
 ; 4                                            ; 3                             ;
-; 5                                            ; 0                             ;
-; 6                                            ; 3                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 3                             ;
-; 9                                            ; 3                             ;
-; 10                                           ; 6                             ;
-; 11                                           ; 1                             ;
-; 12                                           ; 4                             ;
+; 5                                            ; 2                             ;
+; 6                                            ; 1                             ;
+; 7                                            ; 0                             ;
+; 8                                            ; 1                             ;
+; 9                                            ; 4                             ;
+; 10                                           ; 2                             ;
+; 11                                           ; 0                             ;
+; 12                                           ; 2                             ;
 ; 13                                           ; 3                             ;
-; 14                                           ; 6                             ;
-; 15                                           ; 9                             ;
-; 16                                           ; 6                             ;
-; 17                                           ; 5                             ;
-; 18                                           ; 11                            ;
+; 14                                           ; 3                             ;
+; 15                                           ; 10                            ;
+; 16                                           ; 8                             ;
+; 17                                           ; 7                             ;
+; 18                                           ; 9                             ;
 ; 19                                           ; 7                             ;
-; 20                                           ; 11                            ;
+; 20                                           ; 8                             ;
 ; 21                                           ; 8                             ;
-; 22                                           ; 8                             ;
-; 23                                           ; 8                             ;
-; 24                                           ; 5                             ;
-; 25                                           ; 4                             ;
-; 26                                           ; 5                             ;
-; 27                                           ; 4                             ;
-; 28                                           ; 4                             ;
-; 29                                           ; 3                             ;
-; 30                                           ; 13                            ;
-; 31                                           ; 65                            ;
-; 32                                           ; 19                            ;
+; 22                                           ; 7                             ;
+; 23                                           ; 6                             ;
+; 24                                           ; 4                             ;
+; 25                                           ; 8                             ;
+; 26                                           ; 6                             ;
+; 27                                           ; 2                             ;
+; 28                                           ; 3                             ;
+; 29                                           ; 5                             ;
+; 30                                           ; 14                            ;
+; 31                                           ; 60                            ;
+; 32                                           ; 27                            ;
 +----------------------------------------------+-------------------------------+
 
 
 +----------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                          ;
 +--------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 10.32) ; Number of LABs  (Total = 248) ;
+; Number of Signals Sourced Out  (Average = 10.98) ; Number of LABs  (Total = 230) ;
 +--------------------------------------------------+-------------------------------+
 ; 0                                                ; 0                             ;
-; 1                                                ; 19                            ;
-; 2                                                ; 8                             ;
-; 3                                                ; 7                             ;
-; 4                                                ; 14                            ;
-; 5                                                ; 12                            ;
-; 6                                                ; 7                             ;
-; 7                                                ; 13                            ;
-; 8                                                ; 19                            ;
-; 9                                                ; 14                            ;
-; 10                                               ; 8                             ;
-; 11                                               ; 14                            ;
-; 12                                               ; 11                            ;
-; 13                                               ; 11                            ;
+; 1                                                ; 15                            ;
+; 2                                                ; 5                             ;
+; 3                                                ; 3                             ;
+; 4                                                ; 6                             ;
+; 5                                                ; 16                            ;
+; 6                                                ; 5                             ;
+; 7                                                ; 8                             ;
+; 8                                                ; 15                            ;
+; 9                                                ; 17                            ;
+; 10                                               ; 11                            ;
+; 11                                               ; 17                            ;
+; 12                                               ; 7                             ;
+; 13                                               ; 15                            ;
 ; 14                                               ; 11                            ;
-; 15                                               ; 9                             ;
-; 16                                               ; 61                            ;
-; 17                                               ; 2                             ;
-; 18                                               ; 4                             ;
+; 15                                               ; 7                             ;
+; 16                                               ; 62                            ;
+; 17                                               ; 3                             ;
+; 18                                               ; 2                             ;
 ; 19                                               ; 1                             ;
 ; 20                                               ; 0                             ;
-; 21                                               ; 0                             ;
-; 22                                               ; 1                             ;
-; 23                                               ; 0                             ;
-; 24                                               ; 0                             ;
+; 21                                               ; 1                             ;
+; 22                                               ; 0                             ;
+; 23                                               ; 1                             ;
+; 24                                               ; 1                             ;
 ; 25                                               ; 0                             ;
 ; 26                                               ; 0                             ;
 ; 27                                               ; 1                             ;
-; 28                                               ; 0                             ;
-; 29                                               ; 1                             ;
 +--------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 23.98) ; Number of LABs  (Total = 248) ;
+; Number of Distinct Inputs  (Average = 25.04) ; Number of LABs  (Total = 230) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
 ; 2                                            ; 0                             ;
-; 3                                            ; 10                            ;
-; 4                                            ; 8                             ;
-; 5                                            ; 2                             ;
+; 3                                            ; 8                             ;
+; 4                                            ; 4                             ;
+; 5                                            ; 1                             ;
 ; 6                                            ; 1                             ;
 ; 7                                            ; 1                             ;
-; 8                                            ; 2                             ;
-; 9                                            ; 4                             ;
-; 10                                           ; 3                             ;
-; 11                                           ; 2                             ;
-; 12                                           ; 1                             ;
-; 13                                           ; 7                             ;
-; 14                                           ; 8                             ;
+; 8                                            ; 0                             ;
+; 9                                            ; 0                             ;
+; 10                                           ; 2                             ;
+; 11                                           ; 4                             ;
+; 12                                           ; 3                             ;
+; 13                                           ; 4                             ;
+; 14                                           ; 1                             ;
 ; 15                                           ; 4                             ;
-; 16                                           ; 9                             ;
-; 17                                           ; 9                             ;
-; 18                                           ; 6                             ;
-; 19                                           ; 2                             ;
-; 20                                           ; 11                            ;
+; 16                                           ; 7                             ;
+; 17                                           ; 7                             ;
+; 18                                           ; 5                             ;
+; 19                                           ; 9                             ;
+; 20                                           ; 12                            ;
 ; 21                                           ; 7                             ;
-; 22                                           ; 4                             ;
-; 23                                           ; 7                             ;
-; 24                                           ; 1                             ;
-; 25                                           ; 7                             ;
-; 26                                           ; 6                             ;
+; 22                                           ; 3                             ;
+; 23                                           ; 9                             ;
+; 24                                           ; 3                             ;
+; 25                                           ; 8                             ;
+; 26                                           ; 3                             ;
 ; 27                                           ; 12                            ;
-; 28                                           ; 7                             ;
-; 29                                           ; 14                            ;
-; 30                                           ; 13                            ;
-; 31                                           ; 7                             ;
-; 32                                           ; 7                             ;
-; 33                                           ; 12                            ;
-; 34                                           ; 11                            ;
-; 35                                           ; 18                            ;
-; 36                                           ; 14                            ;
-; 37                                           ; 11                            ;
+; 28                                           ; 17                            ;
+; 29                                           ; 10                            ;
+; 30                                           ; 6                             ;
+; 31                                           ; 9                             ;
+; 32                                           ; 12                            ;
+; 33                                           ; 11                            ;
+; 34                                           ; 10                            ;
+; 35                                           ; 10                            ;
+; 36                                           ; 11                            ;
+; 37                                           ; 16                            ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -2626,7 +2571,7 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; Total Unchecked    ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
 ; Total Inapplicable ; 106          ; 0         ; 0         ; 106          ; 106          ; 0         ; 0         ; 106          ; 106          ; 106          ; 106          ; 106          ; 23           ; 106          ; 106          ; 106          ; 106          ; 83           ; 23           ; 106          ; 83           ; 106          ; 106          ; 23           ; 106          ; 0         ; 0         ; 0         ; 106          ; 106          ;
 ; Total Fail         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
-; KEY[0]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[1]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[2]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[4]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[5]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2634,7 +2579,13 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; SW[7]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[8]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[16]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[10]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[11]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[12]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[13]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[14]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[15]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[17]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[1]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[2]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2722,16 +2673,10 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; SW[3]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[0]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[1]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; CLOCK_50           ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[11]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[17]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[3]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; KEY[1]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[10]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[13]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[12]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[15]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[14]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[0]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; CLOCK_50           ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[16]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 
 
@@ -2804,8 +2749,8 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 8
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
+Info (176353): Automatically promoted node mux2:mux_clk|Q[0]  File: /home/raphacosta/mipssingle/mux2.vhd Line: 16
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -3235,26 +3180,26 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:08
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:09
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 1% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 35% of the available device resources in the region that extends from location X58_Y24 to location X68_Y36
+    Info (170196): Router estimated peak interconnect usage is 42% of the available device resources in the region that extends from location X58_Y37 to location X68_Y48
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:39
-Info (11888): Total time spent on timing analysis during the Fitter is 1.87 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:38
+Info (11888): Total time spent on timing analysis during the Fitter is 2.58 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file /home/raphacosta/mipssingle/output_files/mipssingle.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 425 warnings
-    Info: Peak virtual memory: 1800 megabytes
-    Info: Processing ended: Thu Nov  1 19:14:31 2018
+    Info: Peak virtual memory: 1776 megabytes
+    Info: Processing ended: Tue Nov  6 15:11:10 2018
     Info: Elapsed time: 00:01:04
-    Info: Total CPU time (on all processors): 00:01:20
+    Info: Total CPU time (on all processors): 00:01:22
 
 
 +----------------------------+

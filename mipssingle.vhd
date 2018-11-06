@@ -20,7 +20,6 @@ end entity;
 architecture mipssingleArch of mipssingle is
     signal aux_inst_opcode      : STD_LOGIC_VECTOR(5 downto 0);
     signal aux_ula_op           : STD_LOGIC_VECTOR(1 DOWNTO 0);
-	signal CLOCK					  : STD_LOGIC;
 
     signal aux_mux_pc_beq_jmp   : STD_LOGIC;
     signal aux_mux_rt_rd        : STD_LOGIC;
@@ -38,21 +37,25 @@ architecture mipssingleArch of mipssingle is
     signal aux_data_mem_w       : STD_LOGIC_VECTOR(31 DOWNTO 0);
     signal aux_habMEM           : STD_LOGIC;
 	 
-	 signal ULA_OUT				  : STD_LOGIC_VECTOR(31 downto 0);
-	 signal MEM_OUT				  : STD_LOGIC_VECTOR(31 downto 0);
-	 signal aux_op_out_top		  : STD_LOGIC_VECTOR(3 downto 0);
-     signal aux_dado_lido_1, aux_dado_lido_2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
-     signal aux_pc_out 			  : STD_LOGIC_VECTOR(31 DOWNTO 0);
-	  signal aux_pc_reset        : STD_LOGIC;
-	  signal aux_hm				  : STD_LOGIC;
-	  signal aux_ula_z			  : STD_LOGIC;
-	  signal aux_som_beq			  : STD_LOGIC_VECTOR(31 downto 0);
+    signal ULA_OUT				  : STD_LOGIC_VECTOR(31 downto 0);
+    signal MEM_OUT				  : STD_LOGIC_VECTOR(31 downto 0);
+    signal aux_op_out_top		  : STD_LOGIC_VECTOR(3 downto 0);
+    signal aux_dado_lido_1, aux_dado_lido_2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+    signal aux_pc_out 			  : STD_LOGIC_VECTOR(31 DOWNTO 0);
+    signal aux_hm				  : STD_LOGIC;
+    signal aux_ula_z			  : STD_LOGIC;
+    signal aux_som_beq			  : STD_LOGIC_VECTOR(31 downto 0);
 
-	 signal aux_hex_0, aux_hex_1, aux_hex_2, aux_hex_3, aux_hex_4, aux_hex_5, aux_hex_6, aux_hex_7 : STD_LOGIC_VECTOR(3 downto 0);
-	 signal sw_value : STD_LOGIC_VECTOR(3 DOWNTO 0);
-    -- eae meu bacano é quarta feira ja? ja
+    signal aux_hex_0, aux_hex_1, aux_hex_2, aux_hex_3, aux_hex_4, aux_hex_5, aux_hex_6, aux_hex_7 : STD_LOGIC_VECTOR(3 downto 0);
+    signal sw_value : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    signal edge_detector_clk	: STD_LOGIC;
+    signal clock                : STD_LOGIC;
+    -- eae meu bacano é quarta feira ja? amanha e quarta feira meus bacanos
 begin
-	CLOCK <= not KEY(0);
+    edgeDetector: entity work.edgeDetector(bordaSubida) port map(clk => CLOCK_50, entrada => not KEY(0), saida => edge_detector_clk);
+    mux_clk: entity work.mux2 generic map(data_len => 1) port map (A(0) => CLOCK_50, B(0) => edge_detector_clk, SEL => SW(16), Q(0) => clock);
+
+    --  freqPisca : entity work.divisorGenerico (divisaoGenerica)  generic map (divisor => 25) --(divisaoGenerica) := 2^divisor  
     sw_value <= SW(3 DOWNTO 0);
     mipsUc      : entity work.mipsUc port map(
         INST_OPCODE => aux_inst_opcode,
@@ -65,8 +68,7 @@ begin
 		  
 
     mipsFd      : entity work.mipsFd port map(
-      CLK => CLOCK_50,
-		EN_BUT => not KEY(1), 
+        CLK => clock,
         MUX_PC_BEQ_JMP => aux_mux_pc_beq_jmp, MUX_RT_RD => aux_mux_rt_rd,
         MUX_RT_IMM => aux_mux_rt_imm, MUX_ULA_MEM => aux_mux_ula_mem,
         HAB_ESCRITA_REG => aux_hab_escrita_reg,
@@ -80,15 +82,13 @@ begin
 		DADO_LIDO_1 => aux_dado_lido_1,
         DADO_LIDO_2 => aux_dado_lido_2,
         PC_OUT => aux_pc_out,
-		  PC_RESET => aux_pc_reset,
-		  SW_INST => "00000000"&"00000000"&"00000000" & SW(15 DOWNTO 10) & "00",
-		  SEL_INST => SW(17),
-		  ZERO_aux => aux_ula_z,
-		  SOM_BEQ => aux_som_beq
+        PC_RESET => not KEY(3),
+        ZERO_aux => aux_ula_z,
+        SOM_BEQ => aux_som_beq
     );
 
     memoria: entity work.memoriaAll port map(
-        CLK      		=> CLOCK_50,
+        CLK      		=> clock,
         RD      		=> aux_hab_leitura_mem,
         WR 				=> aux_hab_escrita_mem,
         END_MEM 		=> aux_end_mem,
@@ -126,7 +126,7 @@ begin
     process(all)
     begin
 --		  if (falling_edge(KEY(3))) then
-	     aux_pc_reset <= not KEY(3);
+--	     aux_pc_reset <= ;
 --		  else
 --				aux_pc_reset <= '0';
 --		  end if;

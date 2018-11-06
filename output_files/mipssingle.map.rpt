@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mipssingle
-Thu Nov  1 19:12:55 2018
+Tue Nov  6 15:09:47 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -21,8 +21,8 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Source assignments for mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_0|altsyncram_mcc1:auto_generated
  15. Source assignments for mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1|altsyncram_mcc1:auto_generated
- 16. Parameter Settings for User Entity Instance: mipsFd:mipsFd|registradorGenerico:PC
- 17. Parameter Settings for User Entity Instance: mipsFd:mipsFd|mux2:muxInst
+ 16. Parameter Settings for User Entity Instance: mux2:mux_clk
+ 17. Parameter Settings for User Entity Instance: mipsFd:mipsFd|registradorGenerico:PC
  18. Parameter Settings for User Entity Instance: mipsFd:mipsFd|memoriaDeInst:memoriaDeInst
  19. Parameter Settings for User Entity Instance: mipsFd:mipsFd|ulaMips:ula|mux2:Mux_A
  20. Parameter Settings for User Entity Instance: mipsFd:mipsFd|ulaMips:ula|mux2:Mux_B
@@ -48,7 +48,7 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  40. Port Connectivity Checks: "mipsFd:mipsFd|somador:somadorPc"
  41. Port Connectivity Checks: "mipsFd:mipsFd|ulaMips:ula|mux4:Mux_4"
  42. Port Connectivity Checks: "mipsFd:mipsFd|ulaMips:ula|ulinha:ULA"
- 43. Port Connectivity Checks: "mipsFd:mipsFd"
+ 43. Port Connectivity Checks: "mipsFd:mipsFd|registradorGenerico:PC"
  44. Post-Synthesis Netlist Statistics for Top Partition
  45. Elapsed Time Per Partition
  46. Analysis & Synthesis Messages
@@ -78,15 +78,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov  1 19:12:55 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov  6 15:09:47 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; mipssingle                                  ;
 ; Top-level Entity Name              ; mipssingle                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,154                                       ;
-;     Total combinational functions  ; 2,277                                       ;
-;     Dedicated logic registers      ; 2,169                                       ;
-; Total registers                    ; 2169                                        ;
+; Total logic elements               ; 4,149                                       ;
+;     Total combinational functions  ; 2,272                                       ;
+;     Dedicated logic registers      ; 2,170                                       ;
+; Total registers                    ; 2170                                        ;
 ; Total pins                         ; 106                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 1,536                                       ;
@@ -197,7 +197,7 @@ agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.0%      ;
+;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -207,6 +207,7 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ; Library ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
+; edgeDetector.vhd                 ; yes             ; User VHDL File               ; /home/raphacosta/mipssingle/edgeDetector.vhd                                            ;         ;
 ; ulinha.vhd                       ; yes             ; User VHDL File               ; /home/raphacosta/mipssingle/ulinha.vhd                                                  ;         ;
 ; ulaUc.vhd                        ; yes             ; User VHDL File               ; /home/raphacosta/mipssingle/ulaUc.vhd                                                   ;         ;
 ; ulaMips.vhd                      ; yes             ; User VHDL File               ; /home/raphacosta/mipssingle/ulaMips.vhd                                                 ;         ;
@@ -238,37 +239,37 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 4,154          ;
-;                                             ;                ;
-; Total combinational functions               ; 2277           ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 1916           ;
-;     -- 3 input functions                    ; 89             ;
-;     -- <=2 input functions                  ; 272            ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 2220           ;
-;     -- arithmetic mode                      ; 57             ;
-;                                             ;                ;
-; Total registers                             ; 2169           ;
-;     -- Dedicated logic registers            ; 2169           ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 106            ;
-; Total memory bits                           ; 1536           ;
-;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 2233           ;
-; Total fan-out                               ; 15574          ;
-; Average fan-out                             ; 3.30           ;
-+---------------------------------------------+----------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 4,149             ;
+;                                             ;                   ;
+; Total combinational functions               ; 2272              ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 1905              ;
+;     -- 3 input functions                    ; 94                ;
+;     -- <=2 input functions                  ; 273               ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 2215              ;
+;     -- arithmetic mode                      ; 57                ;
+;                                             ;                   ;
+; Total registers                             ; 2170              ;
+;     -- Dedicated logic registers            ; 2170              ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 106               ;
+; Total memory bits                           ; 1536              ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; mux2:mux_clk|Q[0] ;
+; Maximum fan-out                             ; 2233              ;
+; Total fan-out                               ; 15511             ;
+; Average fan-out                             ; 3.29              ;
++---------------------------------------------+-------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -276,7 +277,7 @@ agreement for further details.
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                               ; Entity Name         ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |mipssingle                                  ; 2277 (167)        ; 2169 (0)     ; 1536        ; 0            ; 0       ; 0         ; 106  ; 0            ; |mipssingle                                                                                                       ; mipssingle          ; work         ;
+; |mipssingle                                  ; 2272 (166)        ; 2170 (0)     ; 1536        ; 0            ; 0       ; 0         ; 106  ; 0            ; |mipssingle                                                                                                       ; mipssingle          ; work         ;
 ;    |conversorHex7Seg:display0|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|conversorHex7Seg:display0                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display1|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|conversorHex7Seg:display1                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display2|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|conversorHex7Seg:display2                                                                             ; conversorHex7Seg    ; work         ;
@@ -285,26 +286,27 @@ agreement for further details.
 ;    |conversorHex7Seg:display5|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|conversorHex7Seg:display5                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display6|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|conversorHex7Seg:display6                                                                             ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:display7|               ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|conversorHex7Seg:display7                                                                             ; conversorHex7Seg    ; work         ;
+;    |edgeDetector:edgeDetector|               ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|edgeDetector:edgeDetector                                                                             ; edgeDetector        ; work         ;
 ;    |memoriaAll:memoria|                      ; 1703 (2)          ; 2048 (0)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|memoriaAll:memoria                                                                                    ; memoriaAll          ; work         ;
 ;       |memoriaDeDados:memoria64k|            ; 1701 (1701)       ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|memoriaAll:memoria|memoriaDeDados:memoria64k                                                          ; memoriaDeDados      ; work         ;
-;    |mipsFd:mipsFd|                           ; 333 (2)           ; 121 (0)      ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd                                                                                         ; mipsFd              ; work         ;
+;    |mipsFd:mipsFd|                           ; 326 (1)           ; 121 (0)      ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd                                                                                         ; mipsFd              ; work         ;
 ;       |bancoRegistradores:bancoReg|          ; 73 (73)           ; 81 (81)      ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg                                                             ; bancoRegistradores  ; work         ;
 ;          |altsyncram:registrador_rtl_0|      ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_0                                ; altsyncram          ; work         ;
 ;             |altsyncram_mcc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_0|altsyncram_mcc1:auto_generated ; altsyncram_mcc1     ; work         ;
 ;          |altsyncram:registrador_rtl_1|      ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1                                ; altsyncram          ; work         ;
 ;             |altsyncram_mcc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1|altsyncram_mcc1:auto_generated ; altsyncram_mcc1     ; work         ;
 ;       |memoriaDeInst:memoriaDeInst|          ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|memoriaDeInst:memoriaDeInst                                                             ; memoriaDeInst       ; work         ;
-;       |mux2:muxInst|                         ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|mux2:muxInst                                                                            ; mux2                ; work         ;
-;       |mux2:muxPc|                           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|mux2:muxPc                                                                              ; mux2                ; work         ;
+;       |mux2:muxPc|                           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|mux2:muxPc                                                                              ; mux2                ; work         ;
 ;       |mux2:muxRtRd|                         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|mux2:muxRtRd                                                                            ; mux2                ; work         ;
 ;       |mux2:muxUlaMem|                       ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|mux2:muxUlaMem                                                                          ; mux2                ; work         ;
-;       |registradorGenerico:PC|               ; 13 (13)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC                                                                  ; registradorGenerico ; work         ;
+;       |registradorGenerico:PC|               ; 16 (16)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC                                                                  ; registradorGenerico ; work         ;
 ;       |somador:somadorBeq|                   ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|somador:somadorBeq                                                                      ; somador             ; work         ;
 ;       |somador:somadorPc|                    ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|somador:somadorPc                                                                       ; somador             ; work         ;
-;       |ulaMips:ula|                          ; 108 (12)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|ulaMips:ula                                                                             ; ulaMips             ; work         ;
+;       |ulaMips:ula|                          ; 109 (13)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|ulaMips:ula                                                                             ; ulaMips             ; work         ;
 ;          |mux2:Mux_B|                        ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|ulaMips:ula|mux2:Mux_B                                                                  ; mux2                ; work         ;
 ;          |ulinha:ULA|                        ; 74 (74)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsFd:mipsFd|ulaMips:ula|ulinha:ULA                                                                  ; ulinha              ; work         ;
 ;    |mipsUc:mipsUc|                           ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mipsUc:mipsUc                                                                                         ; mipsUc              ; work         ;
+;    |mux2:mux_clk|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mipssingle|mux2:mux_clk                                                                                          ; mux2                ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -324,8 +326,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+-------------------------------------------------------------+
 ; Register name                                                             ; Reason for Removal                                          ;
 +---------------------------------------------------------------------------+-------------------------------------------------------------+
-; mipsFd:mipsFd|registradorGenerico:PC|DOUT[1]                              ; Merged with mipsFd:mipsFd|registradorGenerico:PC|DOUT[0]    ;
-; mipsFd:mipsFd|registradorGenerico:PC|DOUT[0]                              ; Stuck at GND due to stuck port data_in                      ;
+; mipsFd:mipsFd|registradorGenerico:PC|DOUT[0]                              ; Merged with mipsFd:mipsFd|registradorGenerico:PC|DOUT[1]    ;
+; mipsFd:mipsFd|registradorGenerico:PC|DOUT[1]                              ; Stuck at GND due to stuck port data_in                      ;
 ; mipsFd:mipsFd|memoriaDeInst:memoriaDeInst|Q[0,6..8,10,14,15,20,22,24,30]  ; Stuck at GND due to stuck port data_in                      ;
 ; mipsFd:mipsFd|bancoRegistradores:bancoReg|registrador_rtl_0_bypass[4,8,9] ; Stuck at GND due to stuck port data_in                      ;
 ; mipsFd:mipsFd|bancoRegistradores:bancoReg|registrador_rtl_1_bypass[9,10]  ; Stuck at GND due to stuck port data_in                      ;
@@ -352,12 +354,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2169  ;
-; Number of registers using Synchronous Clear  ; 15    ;
-; Number of registers using Synchronous Load   ; 12    ;
+; Total registers                              ; 2170  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 30    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2078  ;
+; Number of registers using Clock Enable       ; 2048  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -461,10 +463,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC|DOUT[31]             ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC|DOUT[17]             ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC|DOUT[13]             ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC|DOUT[7]              ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC|DOUT[17]             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |mipssingle|mipsFd:mipsFd|registradorGenerico:PC|DOUT[13]             ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |mipssingle|mipsFd:mipsFd|ulaMips:ula|mux4:Mux_4|Mux13                ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|DADO_R_REG1[2]  ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |mipssingle|mipsFd:mipsFd|bancoRegistradores:bancoReg|DADO_R_REG2[28] ;
@@ -494,6 +494,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+----------------------------------------------------------------+
 
 
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:mux_clk ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; data_len       ; 1     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: mipsFd:mipsFd|registradorGenerico:PC ;
 +----------------+-------+----------------------------------------------------------+
@@ -501,16 +511,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+----------------------------------------------------------+
 ; larguradados   ; 32    ; Signed Integer                                           ;
 +----------------+-------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mipsFd:mipsFd|mux2:muxInst ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; data_len       ; 32    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -895,14 +895,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------+
-; Port Connectivity Checks: "mipsFd:mipsFd"        ;
-+----------------+-------+----------+--------------+
-; Port           ; Type  ; Severity ; Details      ;
-+----------------+-------+----------+--------------+
-; sw_inst[31..8] ; Input ; Info     ; Stuck at GND ;
-; sw_inst[1..0]  ; Input ; Info     ; Stuck at GND ;
-+----------------+-------+----------+--------------+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "mipsFd:mipsFd|registradorGenerico:PC" ;
++--------+-------+----------+--------------------------------------+
+; Port   ; Type  ; Severity ; Details                              ;
++--------+-------+----------+--------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                         ;
++--------+-------+----------+--------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -911,27 +910,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 106                         ;
-; cycloneiii_ff         ; 2169                        ;
+; cycloneiii_ff         ; 2170                        ;
+;     CLR               ; 14                          ;
+;     CLR SLD           ; 16                          ;
 ;     ENA               ; 2048                        ;
-;     ENA CLR           ; 14                          ;
-;     ENA CLR SCLR      ; 4                           ;
-;     ENA CLR SCLR SLD  ; 11                          ;
-;     ENA CLR SLD       ; 1                           ;
-;     plain             ; 91                          ;
-; cycloneiii_lcell_comb ; 2278                        ;
+;     plain             ; 92                          ;
+; cycloneiii_lcell_comb ; 2273                        ;
 ;     arith             ; 57                          ;
 ;         2 data inputs ; 48                          ;
 ;         3 data inputs ; 9                           ;
-;     normal            ; 2221                        ;
+;     normal            ; 2216                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 187                         ;
+;         1 data inputs ; 188                         ;
 ;         2 data inputs ; 37                          ;
-;         3 data inputs ; 80                          ;
-;         4 data inputs ; 1916                        ;
+;         3 data inputs ; 85                          ;
+;         4 data inputs ; 1905                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 37.00                       ;
-; Average LUT depth     ; 14.68                       ;
+; Average LUT depth     ; 14.67                       ;
 +-----------------------+-----------------------------+
 
 
@@ -950,10 +947,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Nov  1 19:12:38 2018
+    Info: Processing started: Tue Nov  6 15:09:31 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mipssingle -c mipssingle
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 3 design units, including 1 entities, in source file edgeDetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: /home/raphacosta/mipssingle/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: /home/raphacosta/mipssingle/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: /home/raphacosta/mipssingle/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ulinha.vhd
     Info (12022): Found design unit 1: ulinha-ulinhaArch File: /home/raphacosta/mipssingle/ulinha.vhd Line: 22
     Info (12023): Found entity 1: ulinha File: /home/raphacosta/mipssingle/ulinha.vhd Line: 7
@@ -988,7 +989,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file mipssin
     Info (12022): Found design unit 1: mipssingle-mipssingleArch File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 20
     Info (12023): Found entity 1: mipssingle File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mipsFd.vhd
-    Info (12022): Found design unit 1: mipsFd-mipsFdArch File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 46
+    Info (12022): Found design unit 1: mipsFd-mipsFdArch File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 43
     Info (12023): Found entity 1: mipsFd File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaDeInst.vhd
     Info (12022): Found design unit 1: memoriaDeInst-memoriaDeInstArch File: /home/raphacosta/mipssingle/memoriaDeInst.vhd Line: 19
@@ -1017,27 +1018,30 @@ Info (12021): Found 2 design units, including 1 entities, in source file tristat
 Info (12127): Elaborating entity "mipssingle" for the top level hierarchy
 Warning (10540): VHDL Signal Declaration warning at mipssingle.vhd(12): used explicit default value for signal "LEDR" because signal was never assigned a value File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 12
 Warning (10540): VHDL Signal Declaration warning at mipssingle.vhd(13): used explicit default value for signal "LEDG" because signal was never assigned a value File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 13
-Warning (10036): Verilog HDL or VHDL warning at mipssingle.vhd(23): object "CLOCK" assigned a value but never read File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 23
-Info (12128): Elaborating entity "mipsUc" for hierarchy "mipsUc:mipsUc" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 57
-Info (12128): Elaborating entity "mipsFd" for hierarchy "mipsFd:mipsFd" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 67
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "mipsFd:mipsFd|registradorGenerico:PC" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 70
-Info (12128): Elaborating entity "mux2" for hierarchy "mipsFd:mipsFd|mux2:muxInst" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 71
-Info (12128): Elaborating entity "memoriaDeInst" for hierarchy "mipsFd:mipsFd|memoriaDeInst:memoriaDeInst" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 72
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:edgeDetector" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 55
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:mux_clk" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 56
+Info (12128): Elaborating entity "mipsUc" for hierarchy "mipsUc:mipsUc" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 60
+Info (12128): Elaborating entity "mipsFd" for hierarchy "mipsFd:mipsFd" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 70
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "mipsFd:mipsFd|registradorGenerico:PC" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 66
+Info (12128): Elaborating entity "memoriaDeInst" for hierarchy "mipsFd:mipsFd|memoriaDeInst:memoriaDeInst" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 67
 Warning (10541): VHDL Signal Declaration warning at memoriaDeInst.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/raphacosta/mipssingle/memoriaDeInst.vhd Line: 22
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "mipsFd:mipsFd|bancoRegistradores:bancoReg" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 73
-Info (12128): Elaborating entity "ulaMips" for hierarchy "mipsFd:mipsFd|ulaMips:ula" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 80
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "mipsFd:mipsFd|bancoRegistradores:bancoReg" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 68
+Info (12128): Elaborating entity "ulaMips" for hierarchy "mipsFd:mipsFd|ulaMips:ula" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 75
 Warning (10036): Verilog HDL or VHDL warning at ulaMips.vhd(27): object "z" assigned a value but never read File: /home/raphacosta/mipssingle/ulaMips.vhd Line: 27
+Info (12128): Elaborating entity "mux2" for hierarchy "mipsFd:mipsFd|ulaMips:ula|mux2:Mux_A" File: /home/raphacosta/mipssingle/ulaMips.vhd Line: 33
 Info (12128): Elaborating entity "ulinha" for hierarchy "mipsFd:mipsFd|ulaMips:ula|ulinha:ULA" File: /home/raphacosta/mipssingle/ulaMips.vhd Line: 35
 Info (12128): Elaborating entity "mux4" for hierarchy "mipsFd:mipsFd|ulaMips:ula|mux4:Mux_4" File: /home/raphacosta/mipssingle/ulaMips.vhd Line: 36
-Info (12128): Elaborating entity "ulaUc" for hierarchy "mipsFd:mipsFd|ulaUc:ucUla" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 86
-Info (12128): Elaborating entity "somador" for hierarchy "mipsFd:mipsFd|somador:somadorPc" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 88
-Info (12128): Elaborating entity "extensorSinal" for hierarchy "mipsFd:mipsFd|extensorSinal:extensorSinal" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 91
-Info (12128): Elaborating entity "shifterLeft2" for hierarchy "mipsFd:mipsFd|shifterLeft2:shifter2_26" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 93
-Info (12128): Elaborating entity "mux2" for hierarchy "mipsFd:mipsFd|mux2:muxRtRd" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 97
+Info (12128): Elaborating entity "ulaUc" for hierarchy "mipsFd:mipsFd|ulaUc:ucUla" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 81
+Info (12128): Elaborating entity "somador" for hierarchy "mipsFd:mipsFd|somador:somadorPc" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 83
+Info (12128): Elaborating entity "extensorSinal" for hierarchy "mipsFd:mipsFd|extensorSinal:extensorSinal" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 86
+Info (12128): Elaborating entity "shifterLeft2" for hierarchy "mipsFd:mipsFd|shifterLeft2:shifter2_26" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 88
+Info (12128): Elaborating entity "mux2" for hierarchy "mipsFd:mipsFd|mux2:muxRtRd" File: /home/raphacosta/mipssingle/mipsFd.vhd Line: 92
 Info (12128): Elaborating entity "memoriaAll" for hierarchy "memoriaAll:memoria" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 90
 Info (12128): Elaborating entity "decoder" for hierarchy "memoriaAll:memoria|decoder:decoder" File: /home/raphacosta/mipssingle/memoriaAll.vhd Line: 21
 Info (12128): Elaborating entity "memoriaDeDados" for hierarchy "memoriaAll:memoria|memoriaDeDados:memoria64k" File: /home/raphacosta/mipssingle/memoriaAll.vhd Line: 22
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 102
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer mux2:mux_clk|Q[0] File: /home/raphacosta/mipssingle/mux2.vhd Line: 16
 Warning (276020): Inferred RAM node "mipsFd:mipsFd|bancoRegistradores:bancoReg|registrador_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Warning (276020): Inferred RAM node "mipsFd:mipsFd|bancoRegistradores:bancoReg|registrador_rtl_1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (276014): Found 2 instances of uninferred RAM logic
@@ -1143,8 +1147,8 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "mipsFd:mipsFd|bancoRegistradores:bancoReg|altsyncram:registrador_rtl_1|altsyncram_mcc1:auto_generated|ALTSYNCRAM" File: /home/raphacosta/mipssingle/db/altsyncram_mcc1.tdf Line: 66
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 9
+Warning (21074): Design contains 15 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 9
     Warning (15610): No output dependent on input pin "KEY[2]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 9
     Warning (15610): No output dependent on input pin "SW[4]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
     Warning (15610): No output dependent on input pin "SW[5]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
@@ -1152,16 +1156,22 @@ Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
     Warning (15610): No output dependent on input pin "SW[8]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
     Warning (15610): No output dependent on input pin "SW[9]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[16]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
-Info (21057): Implemented 4396 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[10]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[11]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[12]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[13]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[14]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[15]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[17]" File: /home/raphacosta/mipssingle/mipssingle.vhd Line: 10
+Info (21057): Implemented 4391 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 83 output pins
-    Info (21061): Implemented 4226 logic cells
+    Info (21061): Implemented 4221 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
-    Info: Peak virtual memory: 1342 megabytes
-    Info: Processing ended: Thu Nov  1 19:12:55 2018
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:27
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
+    Info: Peak virtual memory: 1341 megabytes
+    Info: Processing ended: Tue Nov  6 15:09:47 2018
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:28
 
 
